@@ -1,16 +1,20 @@
 PODS:
+  - Fakery (4.1.1)
   - ReSwift (5.0.0)
 
 DEPENDENCIES:
+  - Fakery (~> 4.1.1)
   - ReSwift (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
+    - Fakery
     - ReSwift
 
 SPEC CHECKSUMS:
+  Fakery: d3380c4aa1efe7631c0831d7e26aa9db4491f014
   ReSwift: 628f1a9b3ee52e3b3ca2a644435472fd77afafe1
 
-PODFILE CHECKSUM: 747a062ee31da1603d8eb9876ad0d756d0a0e951
+PODFILE CHECKSUM: b54f34fba91d2696ce60d4cbc4ae4c84372ab691
 
 COCOAPODS: 1.8.4

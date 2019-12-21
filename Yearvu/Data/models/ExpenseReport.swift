@@ -1,5 +1,5 @@
 //
-//  ExpenseTracker.swift
+//  ExpenseReport.swift
 //  Yearvu
 //
 //  Created by Thiago Ricieri on 21/12/19.
@@ -8,9 +8,8 @@
 
 import struct Foundation.Date
 
-struct ExpenseTracker: Model {
-    var name: String
-    var expenses: [Expense] = []
-    var startTrackingDate: Date = Date()
+struct ExpenseReport: Model {
+    var group: ExpenseGroup
     var recurrence: Recurrence
+    var reportingStartedAt: Date = Date()
 }
