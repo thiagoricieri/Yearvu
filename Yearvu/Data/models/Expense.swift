@@ -8,11 +8,9 @@
 
 import struct Foundation.Date
 
-struct Expense: Model, HasName, Monetary, IsRecurrent {
-    var name: String
-    var value: Double
+struct Expense: Model {
+    var name: String = ""
+    var value: Double = 0.0
     var currency: Currency
-    var startDate: Date
-    var recurrence: Recurrence
-    var memo: String
+    var createdAt: Date = Date()
 }
