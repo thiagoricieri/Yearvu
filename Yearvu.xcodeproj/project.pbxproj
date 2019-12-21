@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		257EAAB4FBDAC33D97E61992 /* Pods_Yearvu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FE08ADD9C5C1DE569D49C /* Pods_Yearvu.framework */; };
+		86DC2601275518B23ADF4614 /* Pods_YearvuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA5E241F2B9932BCF42945A /* Pods_YearvuTests.framework */; };
 		B0FB119423AE46170009C9AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB119323AE46170009C9AE /* AppDelegate.swift */; };
 		B0FB119623AE46170009C9AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB119523AE46170009C9AE /* SceneDelegate.swift */; };
 		B0FB119923AE46170009C9AE /* Yearvu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0FB119723AE46170009C9AE /* Yearvu.xcdatamodeld */; };
@@ -16,6 +18,7 @@
 		B0FB11A323AE46180009C9AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FB11A123AE46180009C9AE /* LaunchScreen.storyboard */; };
 		B0FB11AE23AE46180009C9AE /* YearvuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB11AD23AE46180009C9AE /* YearvuTests.swift */; };
 		B0FB11B923AE46180009C9AE /* YearvuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB11B823AE46180009C9AE /* YearvuUITests.swift */; };
+		B139D2770C736A9E6D783563 /* Pods_Yearvu_YearvuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C858B12D20748D6A463BC961 /* Pods_Yearvu_YearvuUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0ACB2940B86F005F98E5C041 /* Pods-Yearvu-YearvuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yearvu-YearvuUITests.debug.xcconfig"; path = "Target Support Files/Pods-Yearvu-YearvuUITests/Pods-Yearvu-YearvuUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		120F55BA0968C316F3C6595B /* Pods-YearvuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YearvuTests.debug.xcconfig"; path = "Target Support Files/Pods-YearvuTests/Pods-YearvuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		292E5F8771044D43AFB7573B /* Pods-Yearvu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yearvu.release.xcconfig"; path = "Target Support Files/Pods-Yearvu/Pods-Yearvu.release.xcconfig"; sourceTree = "<group>"; };
+		9BA5E241F2B9932BCF42945A /* Pods_YearvuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YearvuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FB119023AE46170009C9AE /* Yearvu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yearvu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FB119323AE46170009C9AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0FB119523AE46170009C9AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +58,11 @@
 		B0FB11B423AE46180009C9AE /* YearvuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YearvuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FB11B823AE46180009C9AE /* YearvuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearvuUITests.swift; sourceTree = "<group>"; };
 		B0FB11BA23AE46180009C9AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C858B12D20748D6A463BC961 /* Pods_Yearvu_YearvuUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yearvu_YearvuUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8513CCE4A279D56F07578EF /* Pods-Yearvu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yearvu.debug.xcconfig"; path = "Target Support Files/Pods-Yearvu/Pods-Yearvu.debug.xcconfig"; sourceTree = "<group>"; };
+		E523E25D7F51080563042937 /* Pods-YearvuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YearvuTests.release.xcconfig"; path = "Target Support Files/Pods-YearvuTests/Pods-YearvuTests.release.xcconfig"; sourceTree = "<group>"; };
+		EDD988A49DF2D69F5160A107 /* Pods-Yearvu-YearvuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yearvu-YearvuUITests.release.xcconfig"; path = "Target Support Files/Pods-Yearvu-YearvuUITests/Pods-Yearvu-YearvuUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F50FE08ADD9C5C1DE569D49C /* Pods_Yearvu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yearvu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257EAAB4FBDAC33D97E61992 /* Pods_Yearvu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DC2601275518B23ADF4614 /* Pods_YearvuTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B139D2770C736A9E6D783563 /* Pods_Yearvu_YearvuUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C6D6F367C8F310CFA750E84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F50FE08ADD9C5C1DE569D49C /* Pods_Yearvu.framework */,
+				C858B12D20748D6A463BC961 /* Pods_Yearvu_YearvuUITests.framework */,
+				9BA5E241F2B9932BCF42945A /* Pods_YearvuTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48B2156B2DFD7A80484EFD9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8513CCE4A279D56F07578EF /* Pods-Yearvu.debug.xcconfig */,
+				292E5F8771044D43AFB7573B /* Pods-Yearvu.release.xcconfig */,
+				0ACB2940B86F005F98E5C041 /* Pods-Yearvu-YearvuUITests.debug.xcconfig */,
+				EDD988A49DF2D69F5160A107 /* Pods-Yearvu-YearvuUITests.release.xcconfig */,
+				120F55BA0968C316F3C6595B /* Pods-YearvuTests.debug.xcconfig */,
+				E523E25D7F51080563042937 /* Pods-YearvuTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B0FB118723AE46170009C9AE = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +123,8 @@
 				B0FB11AC23AE46180009C9AE /* YearvuTests */,
 				B0FB11B723AE46180009C9AE /* YearvuUITests */,
 				B0FB119123AE46170009C9AE /* Products */,
+				48B2156B2DFD7A80484EFD9D /* Pods */,
+				3C6D6F367C8F310CFA750E84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0FB11BD23AE46180009C9AE /* Build configuration list for PBXNativeTarget "Yearvu" */;
 			buildPhases = (
+				D477309F1CD73DB85423C7FF /* [CP] Check Pods Manifest.lock */,
 				B0FB118C23AE46170009C9AE /* Sources */,
 				B0FB118D23AE46170009C9AE /* Frameworks */,
 				B0FB118E23AE46170009C9AE /* Resources */,
+				2AB81D8CAFE71ED157E8E0CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0FB11C023AE46180009C9AE /* Build configuration list for PBXNativeTarget "YearvuTests" */;
 			buildPhases = (
+				E0335E41FF41403A9CB5DC51 /* [CP] Check Pods Manifest.lock */,
 				B0FB11A523AE46180009C9AE /* Sources */,
 				B0FB11A623AE46180009C9AE /* Frameworks */,
 				B0FB11A723AE46180009C9AE /* Resources */,
@@ -181,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0FB11C323AE46180009C9AE /* Build configuration list for PBXNativeTarget "YearvuUITests" */;
 			buildPhases = (
+				6C93FEC35684FD29ED45E3B8 /* [CP] Check Pods Manifest.lock */,
 				B0FB11B023AE46180009C9AE /* Sources */,
 				B0FB11B123AE46180009C9AE /* Frameworks */,
 				B0FB11B223AE46180009C9AE /* Resources */,
+				8943C05831F30FA5FFEB0107 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,6 +309,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AB81D8CAFE71ED157E8E0CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yearvu/Pods-Yearvu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yearvu/Pods-Yearvu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yearvu/Pods-Yearvu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C93FEC35684FD29ED45E3B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yearvu-YearvuUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8943C05831F30FA5FFEB0107 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yearvu-YearvuUITests/Pods-Yearvu-YearvuUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yearvu-YearvuUITests/Pods-Yearvu-YearvuUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yearvu-YearvuUITests/Pods-Yearvu-YearvuUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D477309F1CD73DB85423C7FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yearvu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0335E41FF41403A9CB5DC51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YearvuTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B0FB118C23AE46170009C9AE /* Sources */ = {
@@ -436,6 +584,7 @@
 		};
 		B0FB11BE23AE46180009C9AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8513CCE4A279D56F07578EF /* Pods-Yearvu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +592,7 @@
 				DEVELOPMENT_TEAM = 8H5Z8M869P;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Yearvu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,6 +606,7 @@
 		};
 		B0FB11BF23AE46180009C9AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292E5F8771044D43AFB7573B /* Pods-Yearvu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -463,6 +614,7 @@
 				DEVELOPMENT_TEAM = 8H5Z8M869P;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Yearvu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,8 +628,8 @@
 		};
 		B0FB11C123AE46180009C9AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 120F55BA0968C316F3C6595B /* Pods-YearvuTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8H5Z8M869P;
@@ -498,8 +650,8 @@
 		};
 		B0FB11C223AE46180009C9AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E523E25D7F51080563042937 /* Pods-YearvuTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8H5Z8M869P;
@@ -520,8 +672,8 @@
 		};
 		B0FB11C423AE46180009C9AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ACB2940B86F005F98E5C041 /* Pods-Yearvu-YearvuUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8H5Z8M869P;
 				INFOPLIST_FILE = YearvuUITests/Info.plist;
@@ -540,8 +692,8 @@
 		};
 		B0FB11C523AE46180009C9AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDD988A49DF2D69F5160A107 /* Pods-Yearvu-YearvuUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8H5Z8M869P;
 				INFOPLIST_FILE = YearvuUITests/Info.plist;
