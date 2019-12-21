@@ -7,6 +7,7 @@
 //
 
 import CoreData
+import ReSwift
 import UIKit
 
 @UIApplicationMain

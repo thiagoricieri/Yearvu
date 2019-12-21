@@ -10,6 +10,13 @@
 		257EAAB4FBDAC33D97E61992 /* Pods_Yearvu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FE08ADD9C5C1DE569D49C /* Pods_Yearvu.framework */; };
 		86DC2601275518B23ADF4614 /* Pods_YearvuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA5E241F2B9932BCF42945A /* Pods_YearvuTests.framework */; };
 		B06FE60223AE4B4D004782B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE60123AE4B4D004782B3 /* ContentView.swift */; };
+		B06FE60523AE4E32004782B3 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE60423AE4E32004782B3 /* Expense.swift */; };
+		B06FE60923AE4E59004782B3 /* actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE60823AE4E59004782B3 /* actions.swift */; };
+		B06FE60B23AE4E5F004782B3 /* reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE60A23AE4E5F004782B3 /* reducers.swift */; };
+		B06FE60E23AE4ED7004782B3 /* FiduciaryCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE60D23AE4ED7004782B3 /* FiduciaryCurrency.swift */; };
+		B06FE61023AE4EEB004782B3 /* dataSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE60F23AE4EEB004782B3 /* dataSpecs.swift */; };
+		B06FE61523AE5043004782B3 /* recurrenceSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE61423AE5043004782B3 /* recurrenceSpecs.swift */; };
+		B06FE61723AE542D004782B3 /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE61623AE542D004782B3 /* CryptoCurrency.swift */; };
 		B0FB119423AE46170009C9AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB119323AE46170009C9AE /* AppDelegate.swift */; };
 		B0FB119623AE46170009C9AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB119523AE46170009C9AE /* SceneDelegate.swift */; };
 		B0FB119923AE46170009C9AE /* Yearvu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0FB119723AE46170009C9AE /* Yearvu.xcdatamodeld */; };
@@ -44,6 +51,13 @@
 		292E5F8771044D43AFB7573B /* Pods-Yearvu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yearvu.release.xcconfig"; path = "Target Support Files/Pods-Yearvu/Pods-Yearvu.release.xcconfig"; sourceTree = "<group>"; };
 		9BA5E241F2B9932BCF42945A /* Pods_YearvuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YearvuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06FE60123AE4B4D004782B3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B06FE60423AE4E32004782B3 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		B06FE60823AE4E59004782B3 /* actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = actions.swift; sourceTree = "<group>"; };
+		B06FE60A23AE4E5F004782B3 /* reducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reducers.swift; sourceTree = "<group>"; };
+		B06FE60D23AE4ED7004782B3 /* FiduciaryCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiduciaryCurrency.swift; sourceTree = "<group>"; };
+		B06FE60F23AE4EEB004782B3 /* dataSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataSpecs.swift; sourceTree = "<group>"; };
+		B06FE61423AE5043004782B3 /* recurrenceSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recurrenceSpecs.swift; sourceTree = "<group>"; };
+		B06FE61623AE542D004782B3 /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
 		B0BB801923AE492300E7DBB8 /* Yearvu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yearvu.entitlements; sourceTree = "<group>"; };
 		B0FB119023AE46170009C9AE /* Yearvu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yearvu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FB119323AE46170009C9AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,9 +139,31 @@
 			path = preview;
 			sourceTree = "<group>";
 		};
+		B06FE60623AE4E37004782B3 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				B06FE60423AE4E32004782B3 /* Expense.swift */,
+				B06FE60D23AE4ED7004782B3 /* FiduciaryCurrency.swift */,
+				B06FE61623AE542D004782B3 /* CryptoCurrency.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		B06FE61123AE4EF0004782B3 /* coreData */ = {
+			isa = PBXGroup;
+			children = (
+				B0FB119723AE46170009C9AE /* Yearvu.xcdatamodeld */,
+			);
+			path = coreData;
+			sourceTree = "<group>";
+		};
 		B0BB801A23AE49B300E7DBB8 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				B06FE60F23AE4EEB004782B3 /* dataSpecs.swift */,
+				B06FE61423AE5043004782B3 /* recurrenceSpecs.swift */,
+				B06FE60823AE4E59004782B3 /* actions.swift */,
+				B06FE60A23AE4E5F004782B3 /* reducers.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -151,7 +187,8 @@
 		B0BB801D23AE49C100E7DBB8 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				B0FB119723AE46170009C9AE /* Yearvu.xcdatamodeld */,
+				B06FE61123AE4EF0004782B3 /* coreData */,
+				B06FE60623AE4E37004782B3 /* models */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -222,8 +259,8 @@
 		B0FB11AC23AE46180009C9AE /* YearvuTests */ = {
 			isa = PBXGroup;
 			children = (
-				B0FB11AD23AE46180009C9AE /* YearvuTests.swift */,
 				B0FB11AF23AE46180009C9AE /* Info.plist */,
+				B0FB11AD23AE46180009C9AE /* YearvuTests.swift */,
 			);
 			path = YearvuTests;
 			sourceTree = "<group>";
@@ -231,8 +268,8 @@
 		B0FB11B723AE46180009C9AE /* YearvuUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B0FB11B823AE46180009C9AE /* YearvuUITests.swift */,
 				B0FB11BA23AE46180009C9AE /* Info.plist */,
+				B0FB11B823AE46180009C9AE /* YearvuUITests.swift */,
 			);
 			path = YearvuUITests;
 			sourceTree = "<group>";
@@ -476,7 +513,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06FE61023AE4EEB004782B3 /* dataSpecs.swift in Sources */,
+				B06FE60B23AE4E5F004782B3 /* reducers.swift in Sources */,
+				B06FE61523AE5043004782B3 /* recurrenceSpecs.swift in Sources */,
 				B0FB119423AE46170009C9AE /* AppDelegate.swift in Sources */,
+				B06FE60923AE4E59004782B3 /* actions.swift in Sources */,
+				B06FE60523AE4E32004782B3 /* Expense.swift in Sources */,
+				B06FE61723AE542D004782B3 /* CryptoCurrency.swift in Sources */,
+				B06FE60E23AE4ED7004782B3 /* FiduciaryCurrency.swift in Sources */,
 				B0FB119623AE46170009C9AE /* SceneDelegate.swift in Sources */,
 				B06FE60223AE4B4D004782B3 /* ContentView.swift in Sources */,
 				B0FB119923AE46170009C9AE /* Yearvu.xcdatamodeld in Sources */,
