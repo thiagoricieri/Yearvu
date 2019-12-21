@@ -6,7 +6,7 @@ def reswift; pod 'ReSwift', '~> 5.0.0'; end
 
 
 target 'Yearvu' do
-  platform :ios, '11.0'
+  platform :ios, '13.0'
 
   reswift
 

@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		257EAAB4FBDAC33D97E61992 /* Pods_Yearvu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FE08ADD9C5C1DE569D49C /* Pods_Yearvu.framework */; };
 		86DC2601275518B23ADF4614 /* Pods_YearvuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA5E241F2B9932BCF42945A /* Pods_YearvuTests.framework */; };
+		B06FE60223AE4B4D004782B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE60123AE4B4D004782B3 /* ContentView.swift */; };
 		B0FB119423AE46170009C9AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB119323AE46170009C9AE /* AppDelegate.swift */; };
 		B0FB119623AE46170009C9AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB119523AE46170009C9AE /* SceneDelegate.swift */; };
 		B0FB119923AE46170009C9AE /* Yearvu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0FB119723AE46170009C9AE /* Yearvu.xcdatamodeld */; };
-		B0FB119B23AE46170009C9AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB119A23AE46170009C9AE /* ContentView.swift */; };
 		B0FB119D23AE46180009C9AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0FB119C23AE46180009C9AE /* Assets.xcassets */; };
-		B0FB11A023AE46180009C9AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0FB119F23AE46180009C9AE /* Preview Assets.xcassets */; };
+		B0FB11A023AE46180009C9AE /* PreviewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0FB119F23AE46180009C9AE /* PreviewAssets.xcassets */; };
 		B0FB11A323AE46180009C9AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FB11A123AE46180009C9AE /* LaunchScreen.storyboard */; };
 		B0FB11AE23AE46180009C9AE /* YearvuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB11AD23AE46180009C9AE /* YearvuTests.swift */; };
 		B0FB11B923AE46180009C9AE /* YearvuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB11B823AE46180009C9AE /* YearvuUITests.swift */; };
@@ -43,14 +43,14 @@
 		120F55BA0968C316F3C6595B /* Pods-YearvuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YearvuTests.debug.xcconfig"; path = "Target Support Files/Pods-YearvuTests/Pods-YearvuTests.debug.xcconfig"; sourceTree = "<group>"; };
 		292E5F8771044D43AFB7573B /* Pods-Yearvu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yearvu.release.xcconfig"; path = "Target Support Files/Pods-Yearvu/Pods-Yearvu.release.xcconfig"; sourceTree = "<group>"; };
 		9BA5E241F2B9932BCF42945A /* Pods_YearvuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YearvuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06FE60123AE4B4D004782B3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B0BB801923AE492300E7DBB8 /* Yearvu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yearvu.entitlements; sourceTree = "<group>"; };
 		B0FB119023AE46170009C9AE /* Yearvu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yearvu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FB119323AE46170009C9AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0FB119523AE46170009C9AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B0FB119823AE46170009C9AE /* Yearvu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Yearvu.xcdatamodel; sourceTree = "<group>"; };
-		B0FB119A23AE46170009C9AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B0FB119C23AE46180009C9AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B0FB119F23AE46180009C9AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B0FB119F23AE46180009C9AE /* PreviewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PreviewAssets.xcassets; sourceTree = "<group>"; };
 		B0FB11A223AE46180009C9AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0FB11A423AE46180009C9AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0FB11A923AE46180009C9AE /* YearvuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YearvuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +117,61 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B06FE60323AE4D07004782B3 /* preview */ = {
+			isa = PBXGroup;
+			children = (
+				B0FB119F23AE46180009C9AE /* PreviewAssets.xcassets */,
+			);
+			path = preview;
+			sourceTree = "<group>";
+		};
+		B0BB801A23AE49B300E7DBB8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B0BB801B23AE49B600E7DBB8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B06FE60123AE4B4D004782B3 /* ContentView.swift */,
+				B0BB801E23AE49CD00E7DBB8 /* storyboards */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B0BB801C23AE49BB00E7DBB8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B0BB801D23AE49C100E7DBB8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B0FB119723AE46170009C9AE /* Yearvu.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B0BB801E23AE49CD00E7DBB8 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B0FB11A123AE46180009C9AE /* LaunchScreen.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		B0BB801F23AE49FC00E7DBB8 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB801923AE492300E7DBB8 /* Yearvu.entitlements */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		B0FB118723AE46170009C9AE = {
 			isa = PBXGroup;
 			children = (
@@ -142,25 +197,26 @@
 		B0FB119223AE46170009C9AE /* Yearvu */ = {
 			isa = PBXGroup;
 			children = (
-				B0BB801923AE492300E7DBB8 /* Yearvu.entitlements */,
+				B0FB11A423AE46180009C9AE /* Info.plist */,
 				B0FB119323AE46170009C9AE /* AppDelegate.swift */,
 				B0FB119523AE46170009C9AE /* SceneDelegate.swift */,
-				B0FB119A23AE46170009C9AE /* ContentView.swift */,
-				B0FB119C23AE46180009C9AE /* Assets.xcassets */,
-				B0FB11A123AE46180009C9AE /* LaunchScreen.storyboard */,
-				B0FB11A423AE46180009C9AE /* Info.plist */,
-				B0FB119723AE46170009C9AE /* Yearvu.xcdatamodeld */,
-				B0FB119E23AE46180009C9AE /* Preview Content */,
+				B0BB801A23AE49B300E7DBB8 /* Domain */,
+				B0BB801D23AE49C100E7DBB8 /* Data */,
+				B0BB801C23AE49BB00E7DBB8 /* Services */,
+				B0BB801B23AE49B600E7DBB8 /* Presentation */,
+				B0BB801F23AE49FC00E7DBB8 /* Support */,
+				B0FB119E23AE46180009C9AE /* Assets */,
 			);
 			path = Yearvu;
 			sourceTree = "<group>";
 		};
-		B0FB119E23AE46180009C9AE /* Preview Content */ = {
+		B0FB119E23AE46180009C9AE /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				B0FB119F23AE46180009C9AE /* Preview Assets.xcassets */,
+				B0FB119C23AE46180009C9AE /* Assets.xcassets */,
+				B06FE60323AE4D07004782B3 /* preview */,
 			);
-			path = "Preview Content";
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		B0FB11AC23AE46180009C9AE /* YearvuTests */ = {
@@ -291,7 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0FB11A323AE46180009C9AE /* LaunchScreen.storyboard in Resources */,
-				B0FB11A023AE46180009C9AE /* Preview Assets.xcassets in Resources */,
+				B0FB11A023AE46180009C9AE /* PreviewAssets.xcassets in Resources */,
 				B0FB119D23AE46180009C9AE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,7 +478,7 @@
 			files = (
 				B0FB119423AE46170009C9AE /* AppDelegate.swift in Sources */,
 				B0FB119623AE46170009C9AE /* SceneDelegate.swift in Sources */,
-				B0FB119B23AE46170009C9AE /* ContentView.swift in Sources */,
+				B06FE60223AE4B4D004782B3 /* ContentView.swift in Sources */,
 				B0FB119923AE46170009C9AE /* Yearvu.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,14 +645,14 @@
 			baseConfigurationReference = D8513CCE4A279D56F07578EF /* Pods-Yearvu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Yearvu/Yearvu.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Yearvu/Support/Yearvu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"Yearvu/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Yearvu/Assets/preview\"";
 				DEVELOPMENT_TEAM = 8H5Z8M869P;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Yearvu/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -614,14 +670,14 @@
 			baseConfigurationReference = 292E5F8771044D43AFB7573B /* Pods-Yearvu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Yearvu/Yearvu.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Yearvu/Support/Yearvu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"Yearvu/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Yearvu/Assets/preview\"";
 				DEVELOPMENT_TEAM = 8H5Z8M869P;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Yearvu/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
