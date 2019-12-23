@@ -10,10 +10,10 @@ import struct Foundation.Date
 
 protocol Model {}
 
-protocol Currency: HasName {
-    var symbol: String { get set }
-}
-
 protocol HasName {
     var name: String { get set }
+}
+
+protocol Currency: HasName {
+    var symbol: String { get set }
 }

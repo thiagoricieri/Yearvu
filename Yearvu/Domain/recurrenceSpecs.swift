@@ -12,6 +12,7 @@ typealias NextRecurrence = (Date) -> Date
 typealias PreviousRecurrence = (Date) -> Date
 
 enum Recurrence: Hashable {
+    case notRecurrent
     case daily
     case weekly
     case monthly

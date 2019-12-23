@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Yearvu-UnitTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Yearvu.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B0FB118F23AE46170009C9AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0FB11A823AE46180009C9AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0FB11B323AE46180009C9AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

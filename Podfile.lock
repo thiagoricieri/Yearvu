@@ -1,20 +1,24 @@
 PODS:
   - Fakery (4.1.1)
   - ReSwift (5.0.0)
+  - SwiftDate (6.1.0)
 
 DEPENDENCIES:
   - Fakery (~> 4.1.1)
   - ReSwift (~> 5.0.0)
+  - SwiftDate
 
 SPEC REPOS:
   trunk:
     - Fakery
     - ReSwift
+    - SwiftDate
 
 SPEC CHECKSUMS:
   Fakery: d3380c4aa1efe7631c0831d7e26aa9db4491f014
   ReSwift: 628f1a9b3ee52e3b3ca2a644435472fd77afafe1
+  SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
 
-PODFILE CHECKSUM: b54f34fba91d2696ce60d4cbc4ae4c84372ab691
+PODFILE CHECKSUM: aea75fefd2ce35be8191d07f0b01f99836ece539
 
 COCOAPODS: 1.8.4

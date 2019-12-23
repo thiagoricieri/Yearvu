@@ -1,5 +1,5 @@
 //
-//  ExpenseReport.swift
+//  ExpenseEntry.swift
 //  Yearvu
 //
 //  Created by Thiago Ricieri on 21/12/19.
@@ -8,8 +8,8 @@
 
 import struct Foundation.Date
 
-struct ExpenseReport: Model {
-    var group: ExpenseGroup
-    var recurrence: Recurrence
-    var reportingStartedAt: Date = Date()
+struct ExpenseEntry: Model, MonetaryDated {
+    var value: Double = 0.0
+    var currency: Currency
+    var createdAt: Date = Date()
 }

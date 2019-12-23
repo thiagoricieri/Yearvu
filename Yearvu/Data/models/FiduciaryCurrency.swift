@@ -10,3 +10,9 @@ struct FiduciaryCurrency: Currency, Codable {
     var name: String
     var symbol: String
 }
+
+extension FiduciaryCurrency {
+    static var usDollars: Currency {
+        FiduciaryCurrency(name: "Dollar", symbol: "USD")
+    }
+}
