@@ -1,5 +1,5 @@
 //
-//  SavingsReportTests.swift
+//  DailySavingsReportTests.swift
 //  YearvuTests
 //
 //  Created by Thiago Ricieri on 21/12/19.
@@ -11,7 +11,7 @@ import SwiftDate
 import XCTest
 @testable import Yearvu
 
-class SavingsReportTests: XCTestCase {
+class DailySavingsReportTests: XCTestCase {
     var expense: Expense!
     var now: Date!
     
@@ -28,11 +28,12 @@ class SavingsReportTests: XCTestCase {
         var future: Date
         var daysInBetween: Double
         var savingsResult: SavingsResult
+        let calculator = ForecastCalculator()
         
         // Future date  
         future = now + 3.months
         daysInBetween = Double(now.days(until: future)!)
-        savingsResult = forecast(until: future)
+        savingsResult = calculator.forecast(saving: expense, until: future)
         
         XCTAssertEqual(savingsResult.formerSpending.value, daysInBetween * expense.value)
         XCTAssertEqual(savingsResult.valueSaved.value, daysInBetween * expense.value)
@@ -40,14 +41,29 @@ class SavingsReportTests: XCTestCase {
         // Past date
         future = now - 3.months
         daysInBetween = Double(now.days(until: future)!)
-        savingsResult = forecast(until: future)
+        savingsResult = calculator.forecast(saving: expense, until: future)
         
         XCTAssertEqual(savingsResult.valueSaved.value, 0)
         XCTAssertNotNil(savingsResult.error)
     }
     
-    private func forecast(until: Date) -> SavingsResult {
+    func testReplaceExpenses() {
+        let dateFormat = "yyyy-MM-dd"
+        let startDate = "2019-01-01".toDate(dateFormat)!.date
+        let endDate = "2019-03-01".toDate(dateFormat)!.date
         let calculator = ForecastCalculator()
-        return calculator.forecast(saving: expense, until: until)
+        
+        var newExpense = Expense.mock()
+        newExpense.value = 1.0
+        newExpense.reportingStartedAt = startDate
+        newExpense.recurrence = .daily
+        expense.reportingStartedAt = startDate
+        expense.recurrence = .daily
+
+        let savingsResult = calculator.forecast(replacing: expense, by: newExpense, until: endDate)
+        
+        XCTAssertEqual(savingsResult.newSpending.value, 59.0)
+        XCTAssertEqual(savingsResult.valueSaved.value, 59.0)
+        XCTAssertEqual(savingsResult.percentageSaved, 0.5)
     }
 }

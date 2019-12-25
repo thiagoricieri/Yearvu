@@ -12,7 +12,7 @@ struct Savings: SavingsResult {
     var valueSaved: Monetary
     var error: MonetaryError? = nil
     var percentageSaved: Percentage {
-        guard formerSpending.value <= 0 else {
+        guard formerSpending.value > 0 else {
             return Percentage(0)
         }
         return Percentage(valueSaved.value / formerSpending.value)
