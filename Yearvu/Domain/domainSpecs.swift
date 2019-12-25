@@ -49,9 +49,9 @@ protocol SavingsResult: Model {
     var error: MonetaryError? { get }
 }
 
-protocol SavingsCalculator: Calculator {
-    func forecast(saving: MonetaryRecurrent, until: Date) -> SavingsResult
-    func forecast(replacing expense: MonetaryRecurrent, by newExpense: MonetaryRecurrent, until: Date) -> SavingsResult
+protocol SimulationCalculator: Calculator {
+    func simulate(spending: MonetaryRecurrent, until: Date) -> SavingsResult
+    func simulate(replacing expense: MonetaryRecurrent, by newExpense: MonetaryRecurrent, until: Date) -> SavingsResult
 }
 
 protocol ExchangeResult: Model {

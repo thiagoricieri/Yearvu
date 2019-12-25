@@ -12,7 +12,7 @@ import XCTest
 @testable import Yearvu
 
 class ExchangeTests: XCTestCase {
-    let calculator = AppExchangeCalculator()
+    let calculator = TwoWaysExchangeCalculator()
     let BRL = FiduciaryCurrency(name: "Brazilian Real", symbol: "BRL")
     let EUR = FiduciaryCurrency(name: "Euro", symbol: "EUR")
     let GBP = FiduciaryCurrency(name: "Great Britain Pound", symbol: "GBP")

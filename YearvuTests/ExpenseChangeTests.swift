@@ -13,7 +13,7 @@ import XCTest
 
 class ExpenseChangeTests: XCTestCase {
     let dateFormat = "yyyy-MM-dd"
-    let calculator = AppSavingsCalculator()
+    let calculator = SavingsCalculator()
     
     func testChangeDailyToWeeklyAfterFiveWeeks() {
         let startDate = "2019-01-01".toDate(dateFormat)!.date
@@ -29,7 +29,7 @@ class ExpenseChangeTests: XCTestCase {
         newExpense.reportingStartedAt = startDate
         newExpense.recurrence = .weekly
 
-        let savingsResult = calculator.forecast(replacing: expense, by: newExpense, until: endDate)
+        let savingsResult = calculator.simulate(replacing: expense, by: newExpense, until: endDate)
         
         XCTAssertEqual(savingsResult.formerSpending.value, 35.0)
         XCTAssertEqual(savingsResult.newSpending.value, 25.0)
@@ -51,7 +51,7 @@ class ExpenseChangeTests: XCTestCase {
         newExpense.reportingStartedAt = startDate
         newExpense.recurrence = .monthly
 
-        let savingsResult = calculator.forecast(replacing: expense, by: newExpense, until: endDate)
+        let savingsResult = calculator.simulate(replacing: expense, by: newExpense, until: endDate)
         
         XCTAssertEqual(savingsResult.formerSpending.value, 59.0)
         XCTAssertEqual(savingsResult.newSpending.value, 50.0)
@@ -73,7 +73,7 @@ class ExpenseChangeTests: XCTestCase {
         newExpense.reportingStartedAt = startDate
         newExpense.recurrence = .yearly
 
-        let savingsResult = calculator.forecast(replacing: expense, by: newExpense, until: endDate)
+        let savingsResult = calculator.simulate(replacing: expense, by: newExpense, until: endDate)
         
         XCTAssertEqual(savingsResult.formerSpending.value, 1155.0)
         XCTAssertEqual(savingsResult.newSpending.value, 360.0)

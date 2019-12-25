@@ -28,12 +28,12 @@ class DailySavingsReportTests: XCTestCase {
         var future: Date
         var daysInBetween: Double
         var savingsResult: SavingsResult
-        let calculator = AppSavingsCalculator()
+        let calculator = SavingsCalculator()
         
         // Future date  
         future = now + 3.months
         daysInBetween = Double(now.days(until: future)!)
-        savingsResult = calculator.forecast(saving: expense, until: future)
+        savingsResult = calculator.simulate(spending: expense, until: future)
         
         XCTAssertEqual(savingsResult.formerSpending.value, daysInBetween * expense.value)
         XCTAssertEqual(savingsResult.valueSaved.value, daysInBetween * expense.value)
@@ -41,7 +41,7 @@ class DailySavingsReportTests: XCTestCase {
         // Past date
         future = now - 3.months
         daysInBetween = Double(now.days(until: future)!)
-        savingsResult = calculator.forecast(saving: expense, until: future)
+        savingsResult = calculator.simulate(spending: expense, until: future)
         
         XCTAssertEqual(savingsResult.valueSaved.value, 0)
         XCTAssertNotNil(savingsResult.error)
@@ -51,7 +51,7 @@ class DailySavingsReportTests: XCTestCase {
         let dateFormat = "yyyy-MM-dd"
         let startDate = "2019-01-01".toDate(dateFormat)!.date
         let endDate = "2019-03-01".toDate(dateFormat)!.date
-        let calculator = AppSavingsCalculator()
+        let calculator = SavingsCalculator()
         
         var newExpense = Expense.mock()
         newExpense.value = 1.0
@@ -60,7 +60,7 @@ class DailySavingsReportTests: XCTestCase {
         expense.reportingStartedAt = startDate
         expense.recurrence = .daily
 
-        let savingsResult = calculator.forecast(replacing: expense, by: newExpense, until: endDate)
+        let savingsResult = calculator.simulate(replacing: expense, by: newExpense, until: endDate)
         
         XCTAssertEqual(savingsResult.newSpending.value, 59.0)
         XCTAssertEqual(savingsResult.valueSaved.value, 59.0)

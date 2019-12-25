@@ -8,8 +8,8 @@
 
 import struct Foundation.Date
 
-struct AppSavingsCalculator: SavingsCalculator {
-    func forecast(saving expense: MonetaryRecurrent, until: Date) -> SavingsResult {
+struct SavingsCalculator: SimulationCalculator {
+    func simulate(spending expense: MonetaryRecurrent, until: Date) -> SavingsResult {
         var savings = Savings(
             formerSpending: USD(expense),
             newSpending: USD(expense),
@@ -36,7 +36,7 @@ struct AppSavingsCalculator: SavingsCalculator {
         return savings
     }
     
-    func forecast(replacing expense: MonetaryRecurrent, by newExpense: MonetaryRecurrent, until: Date) -> SavingsResult {
+    func simulate(replacing expense: MonetaryRecurrent, by newExpense: MonetaryRecurrent, until: Date) -> SavingsResult {
         var savings = Savings(
             formerSpending: USD(expense),
             newSpending: USD(newExpense),

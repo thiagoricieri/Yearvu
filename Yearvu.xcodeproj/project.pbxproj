@@ -23,7 +23,7 @@
 		B06FE62523AE9F68004782B3 /* UiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE62423AE9F68004782B3 /* UiState.swift */; };
 		B06FE62723AE9FE1004782B3 /* DataState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE62623AE9FE1004782B3 /* DataState.swift */; };
 		B09B057323B3BBE30086B30A /* ExpenseChangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B057223B3BBE30086B30A /* ExpenseChangeTests.swift */; };
-		B09B057523B3C0D80086B30A /* AppExchangeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B057423B3C0D80086B30A /* AppExchangeCalculator.swift */; };
+		B09B057523B3C0D80086B30A /* TwoWaysExchangeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B057423B3C0D80086B30A /* TwoWaysExchangeCalculator.swift */; };
 		B09B057723B3C1240086B30A /* Exchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B057623B3C1240086B30A /* Exchange.swift */; };
 		B09B057923B3C49D0086B30A /* NoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B057823B3C49D0086B30A /* NoCurrency.swift */; };
 		B09B057B23B3D4E80086B30A /* ExchangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B057A23B3D4E80086B30A /* ExchangeTests.swift */; };
@@ -34,7 +34,7 @@
 		B0CBF69923AEA0A1004ECC91 /* uiReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBF69823AEA0A1004ECC91 /* uiReducer.swift */; };
 		B0E1EEE123AEA3BB00EF9F7E /* mockCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1EEE023AEA3BB00EF9F7E /* mockCreator.swift */; };
 		B0E1EEE323AEE77800EF9F7E /* domainSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1EEE223AEE77800EF9F7E /* domainSpecs.swift */; };
-		B0E1EEE523AEE97700EF9F7E /* AppSavingsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1EEE423AEE97700EF9F7E /* AppSavingsCalculator.swift */; };
+		B0E1EEE523AEE97700EF9F7E /* SavingsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1EEE423AEE97700EF9F7E /* SavingsCalculator.swift */; };
 		B0E1EEE823AEEAC200EF9F7E /* Double+Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1EEE723AEEAC200EF9F7E /* Double+Money.swift */; };
 		B0E1EEEA23AEEC2000EF9F7E /* Savings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1EEE923AEEC2000EF9F7E /* Savings.swift */; };
 		B0E1EEEC23AEED1000EF9F7E /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1EEEB23AEED1000EF9F7E /* Money.swift */; };
@@ -87,7 +87,7 @@
 		B06FE62423AE9F68004782B3 /* UiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiState.swift; sourceTree = "<group>"; };
 		B06FE62623AE9FE1004782B3 /* DataState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataState.swift; sourceTree = "<group>"; };
 		B09B057223B3BBE30086B30A /* ExpenseChangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseChangeTests.swift; sourceTree = "<group>"; };
-		B09B057423B3C0D80086B30A /* AppExchangeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExchangeCalculator.swift; sourceTree = "<group>"; };
+		B09B057423B3C0D80086B30A /* TwoWaysExchangeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoWaysExchangeCalculator.swift; sourceTree = "<group>"; };
 		B09B057623B3C1240086B30A /* Exchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exchange.swift; sourceTree = "<group>"; };
 		B09B057823B3C49D0086B30A /* NoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCurrency.swift; sourceTree = "<group>"; };
 		B09B057A23B3D4E80086B30A /* ExchangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeTests.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		B0CBF69823AEA0A1004ECC91 /* uiReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uiReducer.swift; sourceTree = "<group>"; };
 		B0E1EEE023AEA3BB00EF9F7E /* mockCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mockCreator.swift; sourceTree = "<group>"; };
 		B0E1EEE223AEE77800EF9F7E /* domainSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = domainSpecs.swift; sourceTree = "<group>"; };
-		B0E1EEE423AEE97700EF9F7E /* AppSavingsCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSavingsCalculator.swift; sourceTree = "<group>"; };
+		B0E1EEE423AEE97700EF9F7E /* SavingsCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsCalculator.swift; sourceTree = "<group>"; };
 		B0E1EEE723AEEAC200EF9F7E /* Double+Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Money.swift"; sourceTree = "<group>"; };
 		B0E1EEE923AEEC2000EF9F7E /* Savings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Savings.swift; sourceTree = "<group>"; };
 		B0E1EEEB23AEED1000EF9F7E /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
@@ -188,8 +188,8 @@
 		B06FE60623AE4E37004782B3 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				B09B057423B3C0D80086B30A /* AppExchangeCalculator.swift */,
-				B0E1EEE423AEE97700EF9F7E /* AppSavingsCalculator.swift */,
+				B09B057423B3C0D80086B30A /* TwoWaysExchangeCalculator.swift */,
+				B0E1EEE423AEE97700EF9F7E /* SavingsCalculator.swift */,
 				B06FE61623AE542D004782B3 /* CryptoCurrency.swift */,
 				B09B057623B3C1240086B30A /* Exchange.swift */,
 				B06FE61823AE9A90004782B3 /* Expense.swift */,
@@ -659,7 +659,7 @@
 				B06FE61023AE4EEB004782B3 /* dataSpecs.swift in Sources */,
 				B0E1EEE823AEEAC200EF9F7E /* Double+Money.swift in Sources */,
 				B06FE60B23AE4E5F004782B3 /* appReducer.swift in Sources */,
-				B09B057523B3C0D80086B30A /* AppExchangeCalculator.swift in Sources */,
+				B09B057523B3C0D80086B30A /* TwoWaysExchangeCalculator.swift in Sources */,
 				B06FE61523AE5043004782B3 /* recurrenceSpecs.swift in Sources */,
 				B0FB119423AE46170009C9AE /* AppDelegate.swift in Sources */,
 				B06FE60923AE4E59004782B3 /* actionSpecs.swift in Sources */,
@@ -672,7 +672,7 @@
 				B0E1EF0B23B0F40D00EF9F7E /* Date+UntilDate.swift in Sources */,
 				B06FE60523AE4E32004782B3 /* ExpenseEntry.swift in Sources */,
 				B06FE61723AE542D004782B3 /* CryptoCurrency.swift in Sources */,
-				B0E1EEE523AEE97700EF9F7E /* AppSavingsCalculator.swift in Sources */,
+				B0E1EEE523AEE97700EF9F7E /* SavingsCalculator.swift in Sources */,
 				B09B057D23B3D5D90086B30A /* Taxed.swift in Sources */,
 				B06FE62523AE9F68004782B3 /* UiState.swift in Sources */,
 				B0E1EEE123AEA3BB00EF9F7E /* mockCreator.swift in Sources */,
