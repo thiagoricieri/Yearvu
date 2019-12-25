@@ -28,7 +28,7 @@ class DailySavingsReportTests: XCTestCase {
         var future: Date
         var daysInBetween: Double
         var savingsResult: SavingsResult
-        let calculator = ForecastCalculator()
+        let calculator = AppSavingsCalculator()
         
         // Future date  
         future = now + 3.months
@@ -51,7 +51,7 @@ class DailySavingsReportTests: XCTestCase {
         let dateFormat = "yyyy-MM-dd"
         let startDate = "2019-01-01".toDate(dateFormat)!.date
         let endDate = "2019-03-01".toDate(dateFormat)!.date
-        let calculator = ForecastCalculator()
+        let calculator = AppSavingsCalculator()
         
         var newExpense = Expense.mock()
         newExpense.value = 1.0

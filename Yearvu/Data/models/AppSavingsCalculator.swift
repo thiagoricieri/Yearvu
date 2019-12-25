@@ -8,7 +8,7 @@
 
 import struct Foundation.Date
 
-struct ForecastCalculator: SavingsCalculator {
+struct AppSavingsCalculator: SavingsCalculator {
     func forecast(saving expense: MonetaryRecurrent, until: Date) -> SavingsResult {
         var savings = Savings(
             formerSpending: USD(expense),

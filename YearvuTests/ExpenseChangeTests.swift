@@ -13,7 +13,7 @@ import XCTest
 
 class EexpenseChangeTests: XCTestCase {
     let dateFormat = "yyyy-MM-dd"
-    let calculator = ForecastCalculator()
+    let calculator = AppSavingsCalculator()
     
     func testChangeDailyToWeeklyAfterFiveWeeks() {
         let startDate = "2019-01-01".toDate(dateFormat)!.date
