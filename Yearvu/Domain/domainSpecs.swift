@@ -55,13 +55,21 @@ protocol SavingsCalculator: Calculator {
 }
 
 protocol ExchangeResult: Model {
-    var exchanging: Monetary { get }
-    var exchanged: Monetary { get }
-    var ratio: Double { get }
+    var index: ExchangeIndex { get }
     var taxes: [TaxCalculated] { get }
     var taxesTotal: Monetary { get }
+    var exchanging: Monetary { get }
+    var exchanged: Monetary { get }
+    var netExchanged: Monetary { get }
 }
 
 protocol ExchangeCalculator: Calculator {
-    func exchange(_ value: Monetary, taxes: [Tax]) -> ExchangeResult
+    func exchange(from value: Monetary, to currency: Currency, ratio: Float, taxes: [Tax]) -> ExchangeResult
+}
+
+protocol ExchangeIndex: Model {
+    var from: Currency { get }
+    var to: Currency { get }
+    var ratio: Float { get }
+    var inverseRatio: Float { get }
 }

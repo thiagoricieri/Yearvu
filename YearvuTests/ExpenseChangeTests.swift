@@ -11,7 +11,7 @@ import SwiftDate
 import XCTest
 @testable import Yearvu
 
-class EexpenseChangeTests: XCTestCase {
+class ExpenseChangeTests: XCTestCase {
     let dateFormat = "yyyy-MM-dd"
     let calculator = AppSavingsCalculator()
     

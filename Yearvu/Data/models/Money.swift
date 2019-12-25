@@ -35,6 +35,13 @@ extension Money: Equatable {
         }
         return Money(lhs.value + rhs.value, currency: lhs.currency)
     }
+
+    static func -(lhs: Money, rhs: Monetary) -> Money {
+        guard lhs.currency.symbol == rhs.currency.symbol else {
+            return Money()
+        }
+        return Money(lhs.value - rhs.value, currency: lhs.currency)
+    }
 }
 
 class USD: Money {

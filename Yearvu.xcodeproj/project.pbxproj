@@ -23,9 +23,13 @@
 		B06FE62523AE9F68004782B3 /* UiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE62423AE9F68004782B3 /* UiState.swift */; };
 		B06FE62723AE9FE1004782B3 /* DataState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE62623AE9FE1004782B3 /* DataState.swift */; };
 		B09B057323B3BBE30086B30A /* ExpenseChangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B057223B3BBE30086B30A /* ExpenseChangeTests.swift */; };
-		B09B057523B3C0D80086B30A /* USDExchangeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B057423B3C0D80086B30A /* USDExchangeCalculator.swift */; };
+		B09B057523B3C0D80086B30A /* AppExchangeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B057423B3C0D80086B30A /* AppExchangeCalculator.swift */; };
 		B09B057723B3C1240086B30A /* Exchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B057623B3C1240086B30A /* Exchange.swift */; };
 		B09B057923B3C49D0086B30A /* NoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B057823B3C49D0086B30A /* NoCurrency.swift */; };
+		B09B057B23B3D4E80086B30A /* ExchangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B057A23B3D4E80086B30A /* ExchangeTests.swift */; };
+		B09B057D23B3D5D90086B30A /* Taxed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B057C23B3D5D90086B30A /* Taxed.swift */; };
+		B09B057F23B3D5E10086B30A /* Taxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B057E23B3D5E10086B30A /* Taxes.swift */; };
+		B09B058123B3D6560086B30A /* USDExchangeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B058023B3D6560086B30A /* USDExchangeTable.swift */; };
 		B0CBF69723AEA09B004ECC91 /* dataReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBF69623AEA09B004ECC91 /* dataReducer.swift */; };
 		B0CBF69923AEA0A1004ECC91 /* uiReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBF69823AEA0A1004ECC91 /* uiReducer.swift */; };
 		B0E1EEE123AEA3BB00EF9F7E /* mockCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1EEE023AEA3BB00EF9F7E /* mockCreator.swift */; };
@@ -83,9 +87,13 @@
 		B06FE62423AE9F68004782B3 /* UiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiState.swift; sourceTree = "<group>"; };
 		B06FE62623AE9FE1004782B3 /* DataState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataState.swift; sourceTree = "<group>"; };
 		B09B057223B3BBE30086B30A /* ExpenseChangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseChangeTests.swift; sourceTree = "<group>"; };
-		B09B057423B3C0D80086B30A /* USDExchangeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDExchangeCalculator.swift; sourceTree = "<group>"; };
+		B09B057423B3C0D80086B30A /* AppExchangeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExchangeCalculator.swift; sourceTree = "<group>"; };
 		B09B057623B3C1240086B30A /* Exchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exchange.swift; sourceTree = "<group>"; };
 		B09B057823B3C49D0086B30A /* NoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCurrency.swift; sourceTree = "<group>"; };
+		B09B057A23B3D4E80086B30A /* ExchangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeTests.swift; sourceTree = "<group>"; };
+		B09B057C23B3D5D90086B30A /* Taxed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taxed.swift; sourceTree = "<group>"; };
+		B09B057E23B3D5E10086B30A /* Taxes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taxes.swift; sourceTree = "<group>"; };
+		B09B058023B3D6560086B30A /* USDExchangeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDExchangeTable.swift; sourceTree = "<group>"; };
 		B0BB801923AE492300E7DBB8 /* Yearvu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yearvu.entitlements; sourceTree = "<group>"; };
 		B0CBF69623AEA09B004ECC91 /* dataReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataReducer.swift; sourceTree = "<group>"; };
 		B0CBF69823AEA0A1004ECC91 /* uiReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uiReducer.swift; sourceTree = "<group>"; };
@@ -180,16 +188,19 @@
 		B06FE60623AE4E37004782B3 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				B09B057423B3C0D80086B30A /* AppExchangeCalculator.swift */,
+				B0E1EEE423AEE97700EF9F7E /* AppSavingsCalculator.swift */,
+				B06FE61623AE542D004782B3 /* CryptoCurrency.swift */,
+				B09B057623B3C1240086B30A /* Exchange.swift */,
 				B06FE61823AE9A90004782B3 /* Expense.swift */,
 				B06FE60423AE4E32004782B3 /* ExpenseEntry.swift */,
 				B06FE60D23AE4ED7004782B3 /* FiduciaryCurrency.swift */,
-				B06FE61623AE542D004782B3 /* CryptoCurrency.swift */,
-				B09B057823B3C49D0086B30A /* NoCurrency.swift */,
-				B0E1EEE423AEE97700EF9F7E /* AppSavingsCalculator.swift */,
-				B09B057423B3C0D80086B30A /* USDExchangeCalculator.swift */,
-				B0E1EEE923AEEC2000EF9F7E /* Savings.swift */,
-				B09B057623B3C1240086B30A /* Exchange.swift */,
 				B0E1EEEB23AEED1000EF9F7E /* Money.swift */,
+				B09B057823B3C49D0086B30A /* NoCurrency.swift */,
+				B0E1EEE923AEEC2000EF9F7E /* Savings.swift */,
+				B09B057C23B3D5D90086B30A /* Taxed.swift */,
+				B09B057E23B3D5E10086B30A /* Taxes.swift */,
+				B09B058023B3D6560086B30A /* USDExchangeTable.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -374,6 +385,7 @@
 				B0FB11AF23AE46180009C9AE /* Info.plist */,
 				B0FB11AD23AE46180009C9AE /* DailySavingsReportTests.swift */,
 				B09B057223B3BBE30086B30A /* ExpenseChangeTests.swift */,
+				B09B057A23B3D4E80086B30A /* ExchangeTests.swift */,
 			);
 			path = YearvuTests;
 			sourceTree = "<group>";
@@ -647,11 +659,12 @@
 				B06FE61023AE4EEB004782B3 /* dataSpecs.swift in Sources */,
 				B0E1EEE823AEEAC200EF9F7E /* Double+Money.swift in Sources */,
 				B06FE60B23AE4E5F004782B3 /* appReducer.swift in Sources */,
-				B09B057523B3C0D80086B30A /* USDExchangeCalculator.swift in Sources */,
+				B09B057523B3C0D80086B30A /* AppExchangeCalculator.swift in Sources */,
 				B06FE61523AE5043004782B3 /* recurrenceSpecs.swift in Sources */,
 				B0FB119423AE46170009C9AE /* AppDelegate.swift in Sources */,
 				B06FE60923AE4E59004782B3 /* actionSpecs.swift in Sources */,
 				B09B057923B3C49D0086B30A /* NoCurrency.swift in Sources */,
+				B09B058123B3D6560086B30A /* USDExchangeTable.swift in Sources */,
 				B0E1EEEC23AEED1000EF9F7E /* Money.swift in Sources */,
 				B0E1EEEA23AEEC2000EF9F7E /* Savings.swift in Sources */,
 				B06FE62723AE9FE1004782B3 /* DataState.swift in Sources */,
@@ -660,10 +673,12 @@
 				B06FE60523AE4E32004782B3 /* ExpenseEntry.swift in Sources */,
 				B06FE61723AE542D004782B3 /* CryptoCurrency.swift in Sources */,
 				B0E1EEE523AEE97700EF9F7E /* AppSavingsCalculator.swift in Sources */,
+				B09B057D23B3D5D90086B30A /* Taxed.swift in Sources */,
 				B06FE62523AE9F68004782B3 /* UiState.swift in Sources */,
 				B0E1EEE123AEA3BB00EF9F7E /* mockCreator.swift in Sources */,
 				B0CBF69923AEA0A1004ECC91 /* uiReducer.swift in Sources */,
 				B0E1EEE323AEE77800EF9F7E /* domainSpecs.swift in Sources */,
+				B09B057F23B3D5E10086B30A /* Taxes.swift in Sources */,
 				B0CBF69723AEA09B004ECC91 /* dataReducer.swift in Sources */,
 				B09B057723B3C1240086B30A /* Exchange.swift in Sources */,
 				B06FE61B23AE9BCA004782B3 /* AppState.swift in Sources */,
@@ -680,6 +695,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B09B057B23B3D4E80086B30A /* ExchangeTests.swift in Sources */,
 				B09B057323B3BBE30086B30A /* ExpenseChangeTests.swift in Sources */,
 				B0FB11AE23AE46180009C9AE /* DailySavingsReportTests.swift in Sources */,
 			);
