@@ -6,7 +6,7 @@
 //  Copyright © 2019 Thiago Ricieri. All rights reserved.
 //
 
-enum Recurrence: Hashable {
+enum Recurrence: String, Hashable, Codable {
     case notRecurrent
     case hourly
     case daily
@@ -21,7 +21,6 @@ enum Recurrence: Hashable {
     case quarterly
     case semiannually
     case yearly
-    case every(days: Int)
     
     var daysMultiplier: Double {
         switch self {
@@ -39,7 +38,6 @@ enum Recurrence: Hashable {
         case .quarterly: return 365.0 / 4
         case .semiannually: return 365.0 / 2
         case .yearly: return 365.0
-        case .every(let days): return Double(days)
         }
     }
 }

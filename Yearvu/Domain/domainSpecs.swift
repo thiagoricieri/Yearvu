@@ -8,17 +8,18 @@
 
 import struct Foundation.Date
 
-typealias Percentage = Float
-typealias Period = (start: Date, end: Date)
+// MARK: - Convenience Types
 
-protocol Model {}
+typealias Percentage = Float
+
+// MARK: - Models
+
+protocol Model {
+    var id: String { get set }
+}
 
 protocol HasName {
     var name: String { get set }
-}
-
-protocol Currency: HasName {
-    var symbol: String { get set }
 }
 
 protocol Monetary {
@@ -28,7 +29,7 @@ protocol Monetary {
 
 extension Monetary where Self: CustomStringConvertible {
     var description: String {
-        "\(self.currency.symbol) \(self.value)"
+        "\(self.currency) \(self.value)"
     }
 }
 
@@ -36,18 +37,19 @@ protocol StaticCurrency {
     static var currency: Currency { get }
 }
 
-protocol MonetaryDated: Monetary {
+protocol IsDated {
     var createdAt: Date { get set }
 }
 
-protocol MonetaryRecurrent: Monetary {
+protocol IsRecurrent {
     var recurrence: Recurrence { get set }
     var reportingStartedAt: Date { get set }
 }
 
-protocol Tax {
-    var name: String { get }
-    var value: Double { get }
+typealias MonetaryRecurrent = Monetary & IsRecurrent
+
+protocol Tax: HasName {
+    var charge: Double { get }
     var rule: TaxRule { get }
 }
 
@@ -55,14 +57,7 @@ protocol TaxCalculated: Monetary {
     var tax: Tax { get }
 }
 
-enum TaxRule {
-    case percentage
-    case increment
-}
-
-protocol Calculator {}
-
-protocol SavingsResult: Model {
+protocol SavingsResult {
     var formerSpending: Monetary { get }
     var newSpending: Monetary { get }
     var valueSaved: Monetary { get }
@@ -70,12 +65,14 @@ protocol SavingsResult: Model {
     var error: MonetaryError? { get }
 }
 
-protocol SimulationCalculator: Calculator {
-    func simulate(spending: MonetaryRecurrent, until: Date) -> SavingsResult
-    func simulate(replacing expense: MonetaryRecurrent, by newExpense: MonetaryRecurrent, until: Date) -> SavingsResult
+protocol ExchangeIndex {
+    var from: Currency { get }
+    var to: Currency { get }
+    var ratio: Float { get }
+    var inverseRatio: Float { get }
 }
 
-protocol ExchangeResult: Model {
+protocol ExchangeResult {
     var index: ExchangeIndex { get }
     var taxes: [TaxCalculated] { get }
     var taxesTotal: Monetary { get }
@@ -84,13 +81,15 @@ protocol ExchangeResult: Model {
     var netExchanged: Monetary { get }
 }
 
-protocol ExchangeCalculator: Calculator {
-    func exchange(from value: Monetary, to currency: Currency, ratio: Float, taxes: [Tax]) -> ExchangeResult
+// MARK: - Calculators
+
+protocol Calculator {}
+
+protocol SimulationCalculator: Calculator {
+    func simulate(spending: MonetaryRecurrent, until: Date) -> SavingsResult
+    func simulate(replacing expense: MonetaryRecurrent, by newExpense: MonetaryRecurrent, until: Date) -> SavingsResult
 }
 
-protocol ExchangeIndex: Model {
-    var from: Currency { get }
-    var to: Currency { get }
-    var ratio: Float { get }
-    var inverseRatio: Float { get }
+protocol ExchangeCalculator: Calculator {
+    func exchange(from value: Monetary, to currency: Currency, ratio: Float, taxes: [Tax]) -> ExchangeResult
 }

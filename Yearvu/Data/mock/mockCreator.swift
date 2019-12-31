@@ -8,6 +8,7 @@
 
 import class Fakery.Faker
 import struct Foundation.Date
+import class Foundation.JSONEncoder
 
 private let faker = Faker()
 
@@ -18,8 +19,9 @@ extension ExpenseEntry {
         daysForward days: Int = 0
     ) -> ExpenseEntry {
         return ExpenseEntry(
+            id: String(faker.number.increasingUniqueId()),
             value: faker.number.randomDouble(min: valueMin, max: valueMax).money,
-            currency: USD.currency,
+            currency: .usDollars,
             createdAt: faker.date.forward(days)
         )
     }
@@ -43,6 +45,7 @@ extension ExpenseEntry {
 extension Expense {
     static func mock() -> Expense {
         return Expense(
+            id: String(faker.number.increasingUniqueId()),
             name: faker.name.name(),
             value: faker.number.randomDouble(min: 0, max: 1_000).money,
             currency: USD.currency,
@@ -57,6 +60,7 @@ extension Expense {
         valueMax: Double = Double.infinity
     ) -> Expense {
         return Expense(
+            id: String(faker.number.increasingUniqueId()),
             name: faker.name.name(),
             value: faker.number.randomDouble(min: valueMin, max: valueMax).money,
             currency: USD.currency,
@@ -72,6 +76,7 @@ extension Expense {
         valueMax: Double = Double.infinity
     ) -> Expense {
         return Expense(
+            id: String(faker.number.increasingUniqueId()),
             name: faker.name.name(),
             value: faker.number.randomDouble(min: valueMin, max: valueMax).money,
             currency: USD.currency,
@@ -94,9 +99,12 @@ extension Expense {
         expense.recurrence = recurrence
         expense.reportingStartedAt = Date()
         expense.entries = Array(0...units).map { num in
-            ExpenseEntry(
-                value: faker.number.randomDouble(min: money.value * (1 - range), max: money.value * (1 + range)).money,
-                currency: money.currency,
+            let minValue = money.value * (1 - range)
+            let maxValue = money.value * (1 + range)
+            return ExpenseEntry(
+                id: String(faker.number.increasingUniqueId()),
+                value: faker.number.randomDouble(min: minValue, max: maxValue).money,
+                currency: .usDollars,
                 createdAt: faker.date.forward(Int(Double(num) * recurrence.daysMultiplier))
             )
         }
@@ -111,9 +119,22 @@ extension Expense {
     static func mockAppInitialState() -> [Expense] {
         return [
             Expense.mock("Coffee", money: USD(5.0), recurrence: .daily, units: 10, range: 0.3),
-            Expense.mock("Candy", money: GBP(2.0), recurrence: .every(days: 3), units: 30, range: 0.3),
+            Expense.mock("Candy", money: GBP(2.0), recurrence: .everyThreeDays, units: 30, range: 0.3),
             Expense.mock("Gym", money: EUR(39.99), recurrence: .monthly, units: 24, range: 0.2),
             Expense.mock("App Subscription", money: BRL(194.9), recurrence: .yearly, units: 3)
         ]
+    }
+}
+
+// MARK: - JSON generator
+extension Expense {
+    static func generateResourcesJSON(_ expenses: [Expense]) -> String {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+        if let data = try? encoder.encode(expenses) {
+            let json = String.init(data: data, encoding: .utf8)!
+            return json
+        }
+        return "Can't convert"
     }
 }

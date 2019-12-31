@@ -8,12 +8,12 @@
 
 class Money: Monetary, CustomStringConvertible {
     var value: Double = 0.0
-    var currency: Currency = NoCurrency()
+    var currency: Currency = .none
 
     init() {}
 
     init(_ value: Double, currency: Currency) {
-        self.value = value
+        self.value = value.money
         self.currency = currency
     }
 
@@ -26,18 +26,18 @@ class Money: Monetary, CustomStringConvertible {
 extension Money: Equatable {
     static func ==(lhs: Money, rhs: Money) -> Bool {
         return lhs.value == rhs.value
-            && lhs.currency.symbol == rhs.currency.symbol
+            && lhs.currency == rhs.currency
     }
 
     static func +(lhs: Money, rhs: Monetary) -> Money {
-        guard lhs.currency.symbol == rhs.currency.symbol else {
+        guard lhs.currency == rhs.currency else {
             return Money()
         }
         return Money(lhs.value + rhs.value, currency: lhs.currency)
     }
 
     static func -(lhs: Money, rhs: Monetary) -> Money {
-        guard lhs.currency.symbol == rhs.currency.symbol else {
+        guard lhs.currency == rhs.currency else {
             return Money()
         }
         return Money(lhs.value - rhs.value, currency: lhs.currency)
@@ -47,9 +47,7 @@ extension Money: Equatable {
 // MARK: - Concrete Currencies
 
 class USD: Money, StaticCurrency {
-    static var currency: Currency {
-        FiduciaryCurrency(name: "Dollar", symbol: "USD")
-    }
+    static var currency = Currency.usDollars
 
     init(_ value: Double) {
         super.init()
@@ -65,9 +63,7 @@ class USD: Money, StaticCurrency {
 }
 
 class BRL: Money, StaticCurrency {
-    static var currency: Currency {
-        FiduciaryCurrency(name: "Brazilian Real", symbol: "BRL")
-    }
+    static var currency = Currency.brazilianReal
 
     init(_ value: Double) {
         super.init()
@@ -83,9 +79,7 @@ class BRL: Money, StaticCurrency {
 }
 
 class EUR: Money, StaticCurrency {
-    static var currency: Currency {
-        FiduciaryCurrency(name: "Euro", symbol: "EUR")
-    }
+    static var currency = Currency.euro
 
     init(_ value: Double) {
         super.init()
@@ -101,9 +95,7 @@ class EUR: Money, StaticCurrency {
 }
 
 class GBP: Money, StaticCurrency {
-    static var currency: Currency {
-        FiduciaryCurrency(name: "Great Britain Pound", symbol: "GBP")
-    }
+    static var currency = Currency.greatBritainPound
 
     init(_ value: Double) {
         super.init()

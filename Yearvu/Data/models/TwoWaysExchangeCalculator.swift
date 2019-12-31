@@ -12,8 +12,8 @@ struct TwoWaysExchangeCalculator: ExchangeCalculator {
         result.taxes = taxes.map { tax -> TaxCalculated in
             var value = result.exchanged.value
             switch tax.rule {
-            case .percentage: value = value * tax.value
-            case .increment: value = tax.value
+            case .percentage: value = value * tax.charge
+            case .increment: value = tax.charge
             }
             return Taxed(value: value, currency: result.exchanged.currency, tax: tax)
         }

@@ -7,11 +7,23 @@
 //
 
 import func Foundation.pow
+import class Foundation.NumberFormatter
+import class Foundation.NSNumber
+
+private let currencyFormatter = NumberFormatter()
 
 extension Double {
     /// Monetary value rounded to 2 decimals
     var money: Double {
         self.rounded(toPlaces: 2)
+    }
+    
+    /// Currency formatted to be used as a string.
+    var moneyFormatted: String {
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
+        currencyFormatter.currencySymbol = ""
+        return currencyFormatter.string(from: NSNumber(value: self.money))!
     }
     
     /// Rounds the double to decimal places value

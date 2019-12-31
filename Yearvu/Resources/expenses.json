@@ -1,0 +1,468 @@
+[
+  {
+    "recurrence" : "daily",
+    "id" : "1",
+    "value" : 5,
+    "reportingStartedAt" : 599522298.50876105,
+    "currency" : "USD",
+    "name" : "Coffee",
+    "entries" : [
+      {
+        "id" : "6",
+        "value" : 5.9199999999999999,
+        "currency" : "USD",
+        "createdAt" : 599522298.50889301
+      },
+      {
+        "id" : "7",
+        "value" : 5.5199999999999996,
+        "currency" : "USD",
+        "createdAt" : 599608698.508901
+      },
+      {
+        "id" : "8",
+        "value" : 5.0999999999999996,
+        "currency" : "USD",
+        "createdAt" : 599695098.50890601
+      },
+      {
+        "id" : "9",
+        "value" : 3.71,
+        "currency" : "USD",
+        "createdAt" : 599781498.50891101
+      },
+      {
+        "id" : "10",
+        "value" : 3.96,
+        "currency" : "USD",
+        "createdAt" : 599867898.50891602
+      },
+      {
+        "id" : "11",
+        "value" : 6.1799999999999997,
+        "currency" : "USD",
+        "createdAt" : 599954298.50892103
+      },
+      {
+        "id" : "12",
+        "value" : 4.9000000000000004,
+        "currency" : "USD",
+        "createdAt" : 600040698.50892496
+      },
+      {
+        "id" : "13",
+        "value" : 4.9199999999999999,
+        "currency" : "USD",
+        "createdAt" : 600127098.50892997
+      },
+      {
+        "id" : "14",
+        "value" : 5.8700000000000001,
+        "currency" : "USD",
+        "createdAt" : 600213498.50893402
+      },
+      {
+        "id" : "15",
+        "value" : 4.6299999999999999,
+        "currency" : "USD",
+        "createdAt" : 600299898.50893903
+      },
+      {
+        "id" : "16",
+        "value" : 6.0199999999999996,
+        "currency" : "USD",
+        "createdAt" : 600386298.50894403
+      }
+    ]
+  },
+  {
+    "recurrence" : "everyThreeDays",
+    "id" : "17",
+    "value" : 2,
+    "reportingStartedAt" : 599522298.51032197,
+    "currency" : "GBP",
+    "name" : "Candy",
+    "entries" : [
+      {
+        "id" : "22",
+        "value" : 1.6200000000000001,
+        "currency" : "USD",
+        "createdAt" : 599522298.51036096
+      },
+      {
+        "id" : "23",
+        "value" : 2.2799999999999998,
+        "currency" : "USD",
+        "createdAt" : 599781498.51037002
+      },
+      {
+        "id" : "24",
+        "value" : 2.0600000000000001,
+        "currency" : "USD",
+        "createdAt" : 600040698.510378
+      },
+      {
+        "id" : "25",
+        "value" : 1.8500000000000001,
+        "currency" : "USD",
+        "createdAt" : 600299898.51038504
+      },
+      {
+        "id" : "26",
+        "value" : 2.48,
+        "currency" : "USD",
+        "createdAt" : 600559098.51039302
+      },
+      {
+        "id" : "27",
+        "value" : 2.27,
+        "currency" : "USD",
+        "createdAt" : 600818298.51040101
+      },
+      {
+        "id" : "28",
+        "value" : 2.5800000000000001,
+        "currency" : "USD",
+        "createdAt" : 601077498.510409
+      },
+      {
+        "id" : "29",
+        "value" : 2.3300000000000001,
+        "currency" : "USD",
+        "createdAt" : 601336698.51041698
+      },
+      {
+        "id" : "30",
+        "value" : 2.4900000000000002,
+        "currency" : "USD",
+        "createdAt" : 601595898.51042402
+      },
+      {
+        "id" : "31",
+        "value" : 2.27,
+        "currency" : "USD",
+        "createdAt" : 601855098.51043105
+      },
+      {
+        "id" : "32",
+        "value" : 2.1400000000000001,
+        "currency" : "USD",
+        "createdAt" : 602114298.51043904
+      },
+      {
+        "id" : "33",
+        "value" : 1.49,
+        "currency" : "USD",
+        "createdAt" : 602373498.51044703
+      },
+      {
+        "id" : "34",
+        "value" : 2.0899999999999999,
+        "currency" : "USD",
+        "createdAt" : 602632698.51045501
+      },
+      {
+        "id" : "35",
+        "value" : 2.4300000000000002,
+        "currency" : "USD",
+        "createdAt" : 602891898.51046205
+      },
+      {
+        "id" : "36",
+        "value" : 2.1699999999999999,
+        "currency" : "USD",
+        "createdAt" : 603151098.51047003
+      },
+      {
+        "id" : "37",
+        "value" : 1.54,
+        "currency" : "USD",
+        "createdAt" : 603410298.51047695
+      },
+      {
+        "id" : "38",
+        "value" : 2.6000000000000001,
+        "currency" : "USD",
+        "createdAt" : 603669498.51048505
+      },
+      {
+        "id" : "39",
+        "value" : 1.78,
+        "currency" : "USD",
+        "createdAt" : 603928698.51049304
+      },
+      {
+        "id" : "40",
+        "value" : 1.51,
+        "currency" : "USD",
+        "createdAt" : 604187898.51049995
+      },
+      {
+        "id" : "41",
+        "value" : 2.1299999999999999,
+        "currency" : "USD",
+        "createdAt" : 604447098.51050794
+      },
+      {
+        "id" : "42",
+        "value" : 2.3700000000000001,
+        "currency" : "USD",
+        "createdAt" : 604706298.51051605
+      },
+      {
+        "id" : "43",
+        "value" : 2.4500000000000002,
+        "currency" : "USD",
+        "createdAt" : 604965498.51052296
+      },
+      {
+        "id" : "44",
+        "value" : 1.75,
+        "currency" : "USD",
+        "createdAt" : 605224698.51053095
+      },
+      {
+        "id" : "45",
+        "value" : 1.6699999999999999,
+        "currency" : "USD",
+        "createdAt" : 605483898.51053798
+      },
+      {
+        "id" : "46",
+        "value" : 2.54,
+        "currency" : "USD",
+        "createdAt" : 605743098.51054597
+      },
+      {
+        "id" : "47",
+        "value" : 1.6000000000000001,
+        "currency" : "USD",
+        "createdAt" : 606002298.510553
+      },
+      {
+        "id" : "48",
+        "value" : 1.96,
+        "currency" : "USD",
+        "createdAt" : 606261498.51056004
+      },
+      {
+        "id" : "49",
+        "value" : 2.4500000000000002,
+        "currency" : "USD",
+        "createdAt" : 606520698.51056802
+      },
+      {
+        "id" : "50",
+        "value" : 2.1600000000000001,
+        "currency" : "USD",
+        "createdAt" : 606779898.51057601
+      },
+      {
+        "id" : "51",
+        "value" : 1.49,
+        "currency" : "USD",
+        "createdAt" : 607039098.51058304
+      },
+      {
+        "id" : "52",
+        "value" : 1.8,
+        "currency" : "USD",
+        "createdAt" : 607298298.51059103
+      }
+    ]
+  },
+  {
+    "recurrence" : "monthly",
+    "id" : "53",
+    "value" : 39.990000000000002,
+    "reportingStartedAt" : 599522298.51198804,
+    "currency" : "EUR",
+    "name" : "Gym",
+    "entries" : [
+      {
+        "id" : "58",
+        "value" : 39.109999999999999,
+        "currency" : "USD",
+        "createdAt" : 599522298.51200902
+      },
+      {
+        "id" : "59",
+        "value" : 43.850000000000001,
+        "currency" : "USD",
+        "createdAt" : 602114298.51201403
+      },
+      {
+        "id" : "60",
+        "value" : 35.25,
+        "currency" : "USD",
+        "createdAt" : 604706298.51201904
+      },
+      {
+        "id" : "61",
+        "value" : 41.359999999999999,
+        "currency" : "USD",
+        "createdAt" : 607384698.51202404
+      },
+      {
+        "id" : "62",
+        "value" : 40.020000000000003,
+        "currency" : "USD",
+        "createdAt" : 609976698.51202798
+      },
+      {
+        "id" : "63",
+        "value" : 40.07,
+        "currency" : "USD",
+        "createdAt" : 612655098.51203299
+      },
+      {
+        "id" : "64",
+        "value" : 46.93,
+        "currency" : "USD",
+        "createdAt" : 615247098.51203704
+      },
+      {
+        "id" : "65",
+        "value" : 41.759999999999998,
+        "currency" : "USD",
+        "createdAt" : 617839098.512043
+      },
+      {
+        "id" : "66",
+        "value" : 43.119999999999997,
+        "currency" : "USD",
+        "createdAt" : 620517498.51205003
+      },
+      {
+        "id" : "67",
+        "value" : 43.079999999999998,
+        "currency" : "USD",
+        "createdAt" : 623109498.51205599
+      },
+      {
+        "id" : "68",
+        "value" : 34.280000000000001,
+        "currency" : "USD",
+        "createdAt" : 625787898.51206398
+      },
+      {
+        "id" : "69",
+        "value" : 32.119999999999997,
+        "currency" : "USD",
+        "createdAt" : 628379898.51207101
+      },
+      {
+        "id" : "70",
+        "value" : 39.439999999999998,
+        "currency" : "USD",
+        "createdAt" : 631058298.51207602
+      },
+      {
+        "id" : "71",
+        "value" : 38.399999999999999,
+        "currency" : "USD",
+        "createdAt" : 633650298.51207995
+      },
+      {
+        "id" : "72",
+        "value" : 38.920000000000002,
+        "currency" : "USD",
+        "createdAt" : 636242298.51208496
+      },
+      {
+        "id" : "73",
+        "value" : 36.670000000000002,
+        "currency" : "USD",
+        "createdAt" : 638920698.51208901
+      },
+      {
+        "id" : "74",
+        "value" : 46.960000000000001,
+        "currency" : "USD",
+        "createdAt" : 641512698.51209402
+      },
+      {
+        "id" : "75",
+        "value" : 45.630000000000003,
+        "currency" : "USD",
+        "createdAt" : 644191098.51209795
+      },
+      {
+        "id" : "76",
+        "value" : 47.340000000000003,
+        "currency" : "USD",
+        "createdAt" : 646783098.51210296
+      },
+      {
+        "id" : "77",
+        "value" : 45.5,
+        "currency" : "USD",
+        "createdAt" : 649375098.51210701
+      },
+      {
+        "id" : "78",
+        "value" : 40.93,
+        "currency" : "USD",
+        "createdAt" : 652053498.51211202
+      },
+      {
+        "id" : "79",
+        "value" : 46.700000000000003,
+        "currency" : "USD",
+        "createdAt" : 654645498.51211596
+      },
+      {
+        "id" : "80",
+        "value" : 40.909999999999997,
+        "currency" : "USD",
+        "createdAt" : 657323898.51212096
+      },
+      {
+        "id" : "81",
+        "value" : 36.170000000000002,
+        "currency" : "USD",
+        "createdAt" : 659915898.51212502
+      },
+      {
+        "id" : "82",
+        "value" : 46.950000000000003,
+        "currency" : "USD",
+        "createdAt" : 662594298.51213002
+      }
+    ]
+  },
+  {
+    "recurrence" : "yearly",
+    "id" : "83",
+    "value" : 194.90000000000001,
+    "reportingStartedAt" : 599522298.51307595,
+    "currency" : "BRL",
+    "name" : "App Subscription",
+    "entries" : [
+      {
+        "id" : "88",
+        "value" : 194.90000000000001,
+        "currency" : "USD",
+        "createdAt" : 599522298.51308405
+      },
+      {
+        "id" : "89",
+        "value" : 194.90000000000001,
+        "currency" : "USD",
+        "createdAt" : 631058298.51308894
+      },
+      {
+        "id" : "90",
+        "value" : 194.90000000000001,
+        "currency" : "USD",
+        "createdAt" : 662594298.51309395
+      },
+      {
+        "id" : "91",
+        "value" : 194.90000000000001,
+        "currency" : "USD",
+        "createdAt" : 694130298.51309896
+      }
+    ]
+  }
+]

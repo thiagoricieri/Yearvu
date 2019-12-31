@@ -8,12 +8,12 @@
 
 struct BrazilianExchangeTax: Tax {
     var name: String = "Exchange Tax"
-    var value: Double = 0.0638
+    var charge: Double = 0.0638
     var rule: TaxRule = .percentage
 }
 
 struct BankTax: Tax {
     var name: String = "Bank Tax"
-    var value: Double = 0.15
+    var charge: Double = 0.15
     var rule: TaxRule = .increment
 }
