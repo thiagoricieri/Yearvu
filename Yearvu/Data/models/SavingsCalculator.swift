@@ -1,5 +1,5 @@
 //
-//  PeriodicCalculator.swift
+//  SavingsCalculator.swift
 //  Yearvu
 //
 //  Created by Thiago Ricieri on 21/12/19.

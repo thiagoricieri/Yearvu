@@ -9,10 +9,31 @@
 import struct Foundation.Date
 
 typealias Percentage = Float
+typealias Period = (start: Date, end: Date)
+
+protocol Model {}
+
+protocol HasName {
+    var name: String { get set }
+}
+
+protocol Currency: HasName {
+    var symbol: String { get set }
+}
 
 protocol Monetary {
     var value: Double { get set }
     var currency: Currency { get set }
+}
+
+extension Monetary where Self: CustomStringConvertible {
+    var description: String {
+        "\(self.currency.symbol) \(self.value)"
+    }
+}
+
+protocol StaticCurrency {
+    static var currency: Currency { get }
 }
 
 protocol MonetaryDated: Monetary {

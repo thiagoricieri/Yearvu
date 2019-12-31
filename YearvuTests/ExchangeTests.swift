@@ -13,15 +13,11 @@ import XCTest
 
 class ExchangeTests: XCTestCase {
     let calculator = TwoWaysExchangeCalculator()
-    let BRL = FiduciaryCurrency(name: "Brazilian Real", symbol: "BRL")
-    let EUR = FiduciaryCurrency(name: "Euro", symbol: "EUR")
-    let GBP = FiduciaryCurrency(name: "Great Britain Pound", symbol: "GBP")
     
     func testExchangeUSDtoBRL() {
-        let usd = USD(10.0)
         let exchange = calculator.exchange(
-            from: usd,
-            to: BRL,
+            from: USD(10.0),
+            to: BRL.currency,
             ratio: USDExchangeTable.toBRL,
             taxes: [
                 BrazilianExchangeTax(),
@@ -35,10 +31,9 @@ class ExchangeTests: XCTestCase {
     }
     
     func testExchangeUSDtoEUR() {
-        let usd = USD(10.0)
         let exchange = calculator.exchange(
-            from: usd,
-            to: EUR,
+            from: USD(10.0),
+            to: EUR.currency,
             ratio: USDExchangeTable.toEUR,
             taxes: [
                 BankTax()
@@ -51,10 +46,9 @@ class ExchangeTests: XCTestCase {
     }
     
     func testExchangeUSDtoGBP() {
-        let usd = USD(10.0)
         let exchange = calculator.exchange(
-            from: usd,
-            to: GBP,
+            from: USD(10.0),
+            to: GBP.currency,
             ratio: USDExchangeTable.toGBP,
             taxes: [
                 BankTax()
@@ -67,10 +61,9 @@ class ExchangeTests: XCTestCase {
     }
     
     func testExchangeBRLtoUSD() {
-        let brl = Money(50.0, currency: BRL)
         let exchange = calculator.exchange(
-            from: brl,
-            to: FiduciaryCurrency.usDollars,
+            from: BRL(50.0),
+            to: USD.currency,
             ratio: 1 / USDExchangeTable.toBRL,
             taxes: [
                 BrazilianExchangeTax(),
@@ -84,10 +77,9 @@ class ExchangeTests: XCTestCase {
     }
     
     func testExchangeBRLtoEUR() {
-        let brl = Money(50.0, currency: BRL)
         let exchange = calculator.exchange(
-            from: brl,
-            to: FiduciaryCurrency.usDollars,
+            from: BRL(50.0),
+            to: USD.currency,
             ratio: 1 / USDExchangeTable.toBRL * USDExchangeTable.toEUR,
             taxes: [
                 BrazilianExchangeTax(),
@@ -101,10 +93,9 @@ class ExchangeTests: XCTestCase {
     }
     
     func testExchangeBRLtoGBP() {
-        let brl = Money(50.0, currency: BRL)
         let exchange = calculator.exchange(
-            from: brl,
-            to: FiduciaryCurrency.usDollars,
+            from: BRL(50.0),
+            to: USD.currency,
             ratio: 1 / USDExchangeTable.toBRL * USDExchangeTable.toGBP,
             taxes: [
                 BrazilianExchangeTax(),

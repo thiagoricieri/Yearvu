@@ -27,7 +27,7 @@ struct Exchange: ExchangeResult {
     }
 }
 
-struct AnyExchangeIndex: ExchangeIndex {
+class AnyExchangeIndex: ExchangeIndex {
     var from: Currency
     var to: Currency
     var ratio: Float
@@ -36,5 +36,16 @@ struct AnyExchangeIndex: ExchangeIndex {
             return 0.0
         }
         return 1 / ratio
+    }
+    init(from currency: Currency, to otherCurrency: Currency, ratio: Float) {
+        self.from = currency
+        self.to = otherCurrency
+        self.ratio = ratio
+    }
+}
+
+class ExchangeIndexFromUSD: AnyExchangeIndex {
+    convenience init(to currency: Currency, ratio: Float) {
+        self.init(from: USD.currency, to: currency, ratio: ratio)
     }
 }

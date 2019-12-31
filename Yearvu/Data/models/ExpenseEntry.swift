@@ -8,7 +8,7 @@
 
 import struct Foundation.Date
 
-struct ExpenseEntry: Model, MonetaryDated {
+struct ExpenseEntry: Model, MonetaryDated, CustomStringConvertible {
     var value: Double = 0.0
     var currency: Currency
     var createdAt: Date = Date()

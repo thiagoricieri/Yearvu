@@ -14,9 +14,7 @@
 		B06FE60923AE4E59004782B3 /* actionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE60823AE4E59004782B3 /* actionSpecs.swift */; };
 		B06FE60B23AE4E5F004782B3 /* appReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE60A23AE4E5F004782B3 /* appReducer.swift */; };
 		B06FE60E23AE4ED7004782B3 /* FiduciaryCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE60D23AE4ED7004782B3 /* FiduciaryCurrency.swift */; };
-		B06FE61023AE4EEB004782B3 /* dataSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE60F23AE4EEB004782B3 /* dataSpecs.swift */; };
 		B06FE61523AE5043004782B3 /* recurrenceSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE61423AE5043004782B3 /* recurrenceSpecs.swift */; };
-		B06FE61723AE542D004782B3 /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE61623AE542D004782B3 /* CryptoCurrency.swift */; };
 		B06FE61923AE9A90004782B3 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE61823AE9A90004782B3 /* Expense.swift */; };
 		B06FE61B23AE9BCA004782B3 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE61A23AE9BCA004782B3 /* AppState.swift */; };
 		B06FE62223AE9CD2004782B3 /* YearvuStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE62123AE9CD2004782B3 /* YearvuStore.swift */; };
@@ -78,9 +76,7 @@
 		B06FE60823AE4E59004782B3 /* actionSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = actionSpecs.swift; sourceTree = "<group>"; };
 		B06FE60A23AE4E5F004782B3 /* appReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appReducer.swift; sourceTree = "<group>"; };
 		B06FE60D23AE4ED7004782B3 /* FiduciaryCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiduciaryCurrency.swift; sourceTree = "<group>"; };
-		B06FE60F23AE4EEB004782B3 /* dataSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataSpecs.swift; sourceTree = "<group>"; };
 		B06FE61423AE5043004782B3 /* recurrenceSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recurrenceSpecs.swift; sourceTree = "<group>"; };
-		B06FE61623AE542D004782B3 /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
 		B06FE61823AE9A90004782B3 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		B06FE61A23AE9BCA004782B3 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		B06FE62123AE9CD2004782B3 /* YearvuStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearvuStore.swift; sourceTree = "<group>"; };
@@ -188,9 +184,6 @@
 		B06FE60623AE4E37004782B3 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				B09B057423B3C0D80086B30A /* TwoWaysExchangeCalculator.swift */,
-				B0E1EEE423AEE97700EF9F7E /* SavingsCalculator.swift */,
-				B06FE61623AE542D004782B3 /* CryptoCurrency.swift */,
 				B09B057623B3C1240086B30A /* Exchange.swift */,
 				B06FE61823AE9A90004782B3 /* Expense.swift */,
 				B06FE60423AE4E32004782B3 /* ExpenseEntry.swift */,
@@ -198,8 +191,10 @@
 				B0E1EEEB23AEED1000EF9F7E /* Money.swift */,
 				B09B057823B3C49D0086B30A /* NoCurrency.swift */,
 				B0E1EEE923AEEC2000EF9F7E /* Savings.swift */,
+				B0E1EEE423AEE97700EF9F7E /* SavingsCalculator.swift */,
 				B09B057C23B3D5D90086B30A /* Taxed.swift */,
 				B09B057E23B3D5E10086B30A /* Taxes.swift */,
+				B09B057423B3C0D80086B30A /* TwoWaysExchangeCalculator.swift */,
 				B09B058023B3D6560086B30A /* USDExchangeTable.swift */,
 			);
 			path = models;
@@ -248,13 +243,19 @@
 			path = middlewares;
 			sourceTree = "<group>";
 		};
+		B09CAB1023BB7BA900485A78 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B0BB801A23AE49B300E7DBB8 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
 				B06FE62123AE9CD2004782B3 /* YearvuStore.swift */,
-				B06FE60F23AE4EEB004782B3 /* dataSpecs.swift */,
-				B06FE61423AE5043004782B3 /* recurrenceSpecs.swift */,
 				B0E1EEE223AEE77800EF9F7E /* domainSpecs.swift */,
+				B06FE61423AE5043004782B3 /* recurrenceSpecs.swift */,
 				B0E1EEEF23B0C83600EF9F7E /* errors */,
 				B06FE61D23AE9C50004782B3 /* actions */,
 				B06FE61E23AE9C53004782B3 /* reducers */,
@@ -364,8 +365,9 @@
 				B0BB801D23AE49C100E7DBB8 /* Data */,
 				B0BB801C23AE49BB00E7DBB8 /* Services */,
 				B0BB801B23AE49B600E7DBB8 /* Presentation */,
-				B0BB801F23AE49FC00E7DBB8 /* Support */,
 				B0FB119E23AE46180009C9AE /* Assets */,
+				B09CAB1023BB7BA900485A78 /* Resources */,
+				B0BB801F23AE49FC00E7DBB8 /* Support */,
 			);
 			path = Yearvu;
 			sourceTree = "<group>";
@@ -656,7 +658,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B06FE61023AE4EEB004782B3 /* dataSpecs.swift in Sources */,
 				B0E1EEE823AEEAC200EF9F7E /* Double+Money.swift in Sources */,
 				B06FE60B23AE4E5F004782B3 /* appReducer.swift in Sources */,
 				B09B057523B3C0D80086B30A /* TwoWaysExchangeCalculator.swift in Sources */,
@@ -671,7 +672,6 @@
 				B06FE62223AE9CD2004782B3 /* YearvuStore.swift in Sources */,
 				B0E1EF0B23B0F40D00EF9F7E /* Date+UntilDate.swift in Sources */,
 				B06FE60523AE4E32004782B3 /* ExpenseEntry.swift in Sources */,
-				B06FE61723AE542D004782B3 /* CryptoCurrency.swift in Sources */,
 				B0E1EEE523AEE97700EF9F7E /* SavingsCalculator.swift in Sources */,
 				B09B057D23B3D5D90086B30A /* Taxed.swift in Sources */,
 				B06FE62523AE9F68004782B3 /* UiState.swift in Sources */,

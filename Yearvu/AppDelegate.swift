@@ -12,14 +12,29 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var appExpenses = Expense.mockAppInitialState()
+
+    // MARK: - AppDelegate
+
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions
                      launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        appExpenses.enumerated().forEach { index, expense in
+            print("----")
+            print("Expense \(index): \(expense.name)")
+            print("- Value: \(expense)")
+            print("- Recurrence: \(expense.recurrence)")
+            print("- Entries:")
+            expense.entries.enumerated().forEach { entryIndex, entry in
+                print("-- Entry \(entryIndex):")
+                print("-- Value: \(entry)")
+                print("-- Created: \(entry.createdAt)\n")
+            }
+        }
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
+    // MARK: - UISceneSession Lifecycle
 
     func application(_ application: UIApplication,
                      configurationForConnecting connectingSceneSession: UISceneSession,

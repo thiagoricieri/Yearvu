@@ -8,10 +8,10 @@
 
 import struct Foundation.Date
 
-struct Expense: Model, HasName, MonetaryRecurrent {
+struct Expense: Model, HasName, MonetaryRecurrent, CustomStringConvertible {
     var name: String
     var value: Double = 0.0
-    var currency: Currency = FiduciaryCurrency.usDollars
+    var currency: Currency
     var entries: [MonetaryDated] = []
     var recurrence: Recurrence = .notRecurrent
     var reportingStartedAt: Date = Date()

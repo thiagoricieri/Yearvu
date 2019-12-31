@@ -6,7 +6,7 @@
 //  Copyright © 2019 Thiago Ricieri. All rights reserved.
 //
 
-class Money: Monetary {
+class Money: Monetary, CustomStringConvertible {
     var value: Double = 0.0
     var currency: Currency = NoCurrency()
 
@@ -44,16 +44,76 @@ extension Money: Equatable {
     }
 }
 
-class USD: Money {
+// MARK: - Concrete Currencies
+
+class USD: Money, StaticCurrency {
+    static var currency: Currency {
+        FiduciaryCurrency(name: "Dollar", symbol: "USD")
+    }
+
     init(_ value: Double) {
         super.init()
         self.value = value
-        self.currency = FiduciaryCurrency.usDollars
+        self.currency = USD.currency
     }
 
     override init(_ value: Monetary) {
         super.init()
         self.value = value.value
-        self.currency = FiduciaryCurrency.usDollars
+        self.currency = USD.currency
+    }
+}
+
+class BRL: Money, StaticCurrency {
+    static var currency: Currency {
+        FiduciaryCurrency(name: "Brazilian Real", symbol: "BRL")
+    }
+
+    init(_ value: Double) {
+        super.init()
+        self.value = value
+        self.currency = BRL.currency
+    }
+
+    override init(_ value: Monetary) {
+        super.init()
+        self.value = value.value
+        self.currency = BRL.currency
+    }
+}
+
+class EUR: Money, StaticCurrency {
+    static var currency: Currency {
+        FiduciaryCurrency(name: "Euro", symbol: "EUR")
+    }
+
+    init(_ value: Double) {
+        super.init()
+        self.value = value
+        self.currency = EUR.currency
+    }
+
+    override init(_ value: Monetary) {
+        super.init()
+        self.value = value.value
+        self.currency = EUR.currency
+    }
+}
+
+class GBP: Money, StaticCurrency {
+    static var currency: Currency {
+        FiduciaryCurrency(name: "Great Britain Pound", symbol: "GBP")
+    }
+
+    init(_ value: Double) {
+        super.init()
+        self.value = value
+        self.currency = GBP.currency
+    }
+
+    override init(_ value: Monetary) {
+        super.init()
+        self.value = value.value
+        self.currency = GBP.currency
     }
 }
