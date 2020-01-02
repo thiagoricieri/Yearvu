@@ -22,9 +22,11 @@ struct ExpenseRowView: View {
     }
 }
 
+#if DEBUG
 struct ExpenseRowView_Previews: PreviewProvider {
     static var previews: some View {
         ExpenseRowView(expense: expenses[0])
             .previewLayout(.fixed(width: 400, height: 70))
     }
 }
+#endif

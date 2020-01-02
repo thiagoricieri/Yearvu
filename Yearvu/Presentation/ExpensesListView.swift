@@ -12,15 +12,19 @@ struct ExpensesListView: View {
     var body: some View {
         NavigationView {
             List(expenses) { expense in
-                ExpenseRowView(expense: expense)
+                NavigationLink(destination: ExpenseDetailView(expense: expense)) {
+                    ExpenseRowView(expense: expense)
+                }
             }
             .navigationBarTitle(Text("Expenses"))
         }
     }
 }
 
+#if DEBUG
 struct ExpensesListView_Previews: PreviewProvider {
     static var previews: some View {
         ExpensesListView()
     }
 }
+#endif

@@ -14,3 +14,7 @@ struct ExpenseEntry: Model, IsDated, Monetary, Codable, Identifiable {
     var currency: Currency
     var createdAt: Date = Date()
 }
+
+extension ExpenseEntry {
+    static let empty = ExpenseEntry(id: "", value: 0.0, currency: .none)
+}

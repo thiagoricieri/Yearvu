@@ -27,6 +27,12 @@ protocol Monetary {
     var currency: Currency { get set }
 }
 
+extension Monetary {
+    var prettyValue: String {
+        "\(currency.rawValue) \(value.moneyFormatted)"
+    }
+}
+
 extension Monetary where Self: CustomStringConvertible {
     var description: String {
         "\(self.currency) \(self.value)"

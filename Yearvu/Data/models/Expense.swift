@@ -16,8 +16,4 @@ struct Expense: Model, HasName, MonetaryRecurrent, Codable, Identifiable {
     var entries: [ExpenseEntry] = []
     var recurrence: Recurrence = .notRecurrent
     var reportingStartedAt: Date = Date()
-    
-    var prettyValue: String {
-        "\(currency.rawValue) \(value.moneyFormatted)"
-    }
 }

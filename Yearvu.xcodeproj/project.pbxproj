@@ -9,8 +9,14 @@
 /* Begin PBXBuildFile section */
 		257EAAB4FBDAC33D97E61992 /* Pods_Yearvu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FE08ADD9C5C1DE569D49C /* Pods_Yearvu.framework */; };
 		86DC2601275518B23ADF4614 /* Pods_YearvuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA5E241F2B9932BCF42945A /* Pods_YearvuTests.framework */; };
+		B005F58123BE152400CE9BE8 /* EntryFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B005F58023BE152400CE9BE8 /* EntryFormView.swift */; };
 		B01A65C423BBF69200DC7A0E /* expenses.json in Resources */ = {isa = PBXBuildFile; fileRef = B01A65C323BBF69200DC7A0E /* expenses.json */; };
 		B01A65C623BBF80C00DC7A0E /* loadMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01A65C523BBF80C00DC7A0E /* loadMock.swift */; };
+		B06614C723BD3AA0006D3AAD /* Date+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06614C623BD3AA0006D3AAD /* Date+Formatted.swift */; };
+		B06614C923BD3F7F006D3AAD /* OneNumberStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06614C823BD3F7F006D3AAD /* OneNumberStatView.swift */; };
+		B06614CB23BD45F9006D3AAD /* ExpenseEntriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06614CA23BD45F9006D3AAD /* ExpenseEntriesListView.swift */; };
+		B06614CD23BD4652006D3AAD /* ExpenseEntryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06614CC23BD4652006D3AAD /* ExpenseEntryRowView.swift */; };
+		B06BCDA223BD34C0006F6769 /* ExpenseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BCDA123BD34C0006F6769 /* ExpenseDetailView.swift */; };
 		B06FE60223AE4B4D004782B3 /* ExpensesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE60123AE4B4D004782B3 /* ExpensesListView.swift */; };
 		B06FE60523AE4E32004782B3 /* ExpenseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE60423AE4E32004782B3 /* ExpenseEntry.swift */; };
 		B06FE60923AE4E59004782B3 /* actionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FE60823AE4E59004782B3 /* actionSpecs.swift */; };
@@ -74,8 +80,14 @@
 		120F55BA0968C316F3C6595B /* Pods-YearvuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YearvuTests.debug.xcconfig"; path = "Target Support Files/Pods-YearvuTests/Pods-YearvuTests.debug.xcconfig"; sourceTree = "<group>"; };
 		292E5F8771044D43AFB7573B /* Pods-Yearvu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yearvu.release.xcconfig"; path = "Target Support Files/Pods-Yearvu/Pods-Yearvu.release.xcconfig"; sourceTree = "<group>"; };
 		9BA5E241F2B9932BCF42945A /* Pods_YearvuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YearvuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B005F58023BE152400CE9BE8 /* EntryFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryFormView.swift; sourceTree = "<group>"; };
 		B01A65C323BBF69200DC7A0E /* expenses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = expenses.json; sourceTree = "<group>"; };
 		B01A65C523BBF80C00DC7A0E /* loadMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadMock.swift; sourceTree = "<group>"; };
+		B06614C623BD3AA0006D3AAD /* Date+Formatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatted.swift"; sourceTree = "<group>"; };
+		B06614C823BD3F7F006D3AAD /* OneNumberStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneNumberStatView.swift; sourceTree = "<group>"; };
+		B06614CA23BD45F9006D3AAD /* ExpenseEntriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEntriesListView.swift; sourceTree = "<group>"; };
+		B06614CC23BD4652006D3AAD /* ExpenseEntryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEntryRowView.swift; sourceTree = "<group>"; };
+		B06BCDA123BD34C0006F6769 /* ExpenseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetailView.swift; sourceTree = "<group>"; };
 		B06FE60123AE4B4D004782B3 /* ExpensesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensesListView.swift; sourceTree = "<group>"; };
 		B06FE60423AE4E32004782B3 /* ExpenseEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEntry.swift; sourceTree = "<group>"; };
 		B06FE60823AE4E59004782B3 /* actionSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = actionSpecs.swift; sourceTree = "<group>"; };
@@ -286,6 +298,11 @@
 			children = (
 				B06FE60123AE4B4D004782B3 /* ExpensesListView.swift */,
 				B09CAB1123BBD91700485A78 /* ExpenseRowView.swift */,
+				B06BCDA123BD34C0006F6769 /* ExpenseDetailView.swift */,
+				B06614C823BD3F7F006D3AAD /* OneNumberStatView.swift */,
+				B06614CA23BD45F9006D3AAD /* ExpenseEntriesListView.swift */,
+				B005F58023BE152400CE9BE8 /* EntryFormView.swift */,
+				B06614CC23BD4652006D3AAD /* ExpenseEntryRowView.swift */,
 				B0BB801E23AE49CD00E7DBB8 /* storyboards */,
 			);
 			path = Presentation;
@@ -338,6 +355,7 @@
 			children = (
 				B0E1EF0A23B0F40D00EF9F7E /* Date+UntilDate.swift */,
 				B0E1EEE723AEEAC200EF9F7E /* Double+Money.swift */,
+				B06614C623BD3AA0006D3AAD /* Date+Formatted.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -683,24 +701,30 @@
 				B0FB119423AE46170009C9AE /* AppDelegate.swift in Sources */,
 				B06FE60923AE4E59004782B3 /* actionSpecs.swift in Sources */,
 				B09CAB1623BBDFDE00485A78 /* Currency.swift in Sources */,
+				B005F58123BE152400CE9BE8 /* EntryFormView.swift in Sources */,
 				B09CAB1223BBD91700485A78 /* ExpenseRowView.swift in Sources */,
 				B09B058123B3D6560086B30A /* USDExchangeTable.swift in Sources */,
 				B0E1EEEC23AEED1000EF9F7E /* Money.swift in Sources */,
 				B0E1EEEA23AEEC2000EF9F7E /* Savings.swift in Sources */,
 				B06FE62723AE9FE1004782B3 /* DataState.swift in Sources */,
+				B06614CB23BD45F9006D3AAD /* ExpenseEntriesListView.swift in Sources */,
 				B06FE62223AE9CD2004782B3 /* YearvuStore.swift in Sources */,
 				B09CAB1423BBDE4C00485A78 /* TaxRule.swift in Sources */,
 				B0E1EF0B23B0F40D00EF9F7E /* Date+UntilDate.swift in Sources */,
 				B06FE60523AE4E32004782B3 /* ExpenseEntry.swift in Sources */,
 				B0E1EEE523AEE97700EF9F7E /* SavingsCalculator.swift in Sources */,
 				B09B057D23B3D5D90086B30A /* Taxed.swift in Sources */,
+				B06BCDA223BD34C0006F6769 /* ExpenseDetailView.swift in Sources */,
 				B06FE62523AE9F68004782B3 /* UiState.swift in Sources */,
 				B01A65C623BBF80C00DC7A0E /* loadMock.swift in Sources */,
+				B06614C923BD3F7F006D3AAD /* OneNumberStatView.swift in Sources */,
 				B0E1EEE123AEA3BB00EF9F7E /* mockCreator.swift in Sources */,
 				B0CBF69923AEA0A1004ECC91 /* uiReducer.swift in Sources */,
 				B0E1EEE323AEE77800EF9F7E /* domainSpecs.swift in Sources */,
+				B06614CD23BD4652006D3AAD /* ExpenseEntryRowView.swift in Sources */,
 				B09B057F23B3D5E10086B30A /* Taxes.swift in Sources */,
 				B0CBF69723AEA09B004ECC91 /* dataReducer.swift in Sources */,
+				B06614C723BD3AA0006D3AAD /* Date+Formatted.swift in Sources */,
 				B09B057723B3C1240086B30A /* Exchange.swift in Sources */,
 				B06FE61B23AE9BCA004782B3 /* AppState.swift in Sources */,
 				B06FE61923AE9A90004782B3 /* Expense.swift in Sources */,
