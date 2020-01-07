@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ExpensesListView: View {
+    let expenses: [Expense]
+    
     var body: some View {
         NavigationView {
             List(expenses) { expense in
@@ -24,7 +26,7 @@ struct ExpensesListView: View {
 #if DEBUG
 struct ExpensesListView_Previews: PreviewProvider {
     static var previews: some View {
-        ExpensesListView()
+        ExpensesListView(expenses: expenses)
     }
 }
 #endif

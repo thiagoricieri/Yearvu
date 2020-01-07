@@ -11,6 +11,7 @@ import class Foundation.JSONDecoder
 import struct Foundation.Data
 
 let expenses: [Expense] = load("expenses.json")
+let currencies = ["BRL", "USD", "EUR", "GBP"]
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
