@@ -7,9 +7,10 @@
 //
 
 import struct Foundation.Date
+import struct Foundation.UUID
 
 struct Expense: Model, HasName, MonetaryRecurrent, Codable, Identifiable {
-    var id: String
+    var id: UUID = UUID()
     var name: String
     var value: Double = 0.0
     var currency: Currency

@@ -7,6 +7,7 @@
 //
 
 import struct Foundation.Date
+import struct Foundation.UUID
 
 // MARK: - Convenience Types
 
@@ -14,8 +15,12 @@ typealias Percentage = Float
 
 // MARK: - Models
 
-protocol Model {
-    var id: String { get set }
+protocol Model: Identifiable {
+    var id: UUID { get }
+}
+
+protocol ViewModel: Identifiable {
+    var id: UUID { get }
 }
 
 protocol HasName {

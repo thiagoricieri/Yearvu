@@ -9,9 +9,11 @@
 import protocol Combine.ObservableObject
 import struct Combine.Published
 import struct Foundation.Date
+import struct Foundation.UUID
 import struct SwiftUI.Binding
 
-class EntryFormViewModel: ObservableObject {
+class EntryFormViewModel: ObservableObject, ViewModel {
+    var id: UUID = UUID()
     var entry: ExpenseEntry
     let currencies: [String]
 

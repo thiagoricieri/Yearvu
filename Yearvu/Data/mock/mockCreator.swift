@@ -19,7 +19,6 @@ extension ExpenseEntry {
         daysForward days: Int = 0
     ) -> ExpenseEntry {
         return ExpenseEntry(
-            id: String(faker.number.increasingUniqueId()),
             value: faker.number.randomDouble(min: valueMin, max: valueMax).money,
             currency: .usDollars,
             createdAt: faker.date.forward(days)
@@ -45,7 +44,6 @@ extension ExpenseEntry {
 extension Expense {
     static func mock() -> Expense {
         return Expense(
-            id: String(faker.number.increasingUniqueId()),
             name: faker.name.name(),
             value: faker.number.randomDouble(min: 0, max: 1_000).money,
             currency: USD.currency,
@@ -60,7 +58,6 @@ extension Expense {
         valueMax: Double = Double.infinity
     ) -> Expense {
         return Expense(
-            id: String(faker.number.increasingUniqueId()),
             name: faker.name.name(),
             value: faker.number.randomDouble(min: valueMin, max: valueMax).money,
             currency: USD.currency,
@@ -76,7 +73,6 @@ extension Expense {
         valueMax: Double = Double.infinity
     ) -> Expense {
         return Expense(
-            id: String(faker.number.increasingUniqueId()),
             name: faker.name.name(),
             value: faker.number.randomDouble(min: valueMin, max: valueMax).money,
             currency: USD.currency,
@@ -102,7 +98,6 @@ extension Expense {
             let minValue = money.value * (1 - range)
             let maxValue = money.value * (1 + range)
             return ExpenseEntry(
-                id: String(faker.number.increasingUniqueId()),
                 value: faker.number.randomDouble(min: minValue, max: maxValue).money,
                 currency: .usDollars,
                 createdAt: faker.date.forward(Int(Double(num) * recurrence.daysMultiplier))
