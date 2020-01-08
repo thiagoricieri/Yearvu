@@ -10,7 +10,7 @@ import struct Foundation.Date
 import struct Foundation.UUID
 
 struct ExpenseEntry: Model, IsDated, Monetary, Codable, Identifiable {
-    var id: UUID = UUID()
+    var id: String = UUID().uuidString
     var value: Double
     var currency: Currency
     var createdAt: Date = Date()
@@ -18,4 +18,8 @@ struct ExpenseEntry: Model, IsDated, Monetary, Codable, Identifiable {
 
 extension ExpenseEntry {
     static let empty = ExpenseEntry(value: 0.0, currency: .none)
+}
+
+extension ExpenseEntry: Hashable {
+    
 }

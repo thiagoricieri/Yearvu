@@ -16,11 +16,11 @@ typealias Percentage = Float
 // MARK: - Models
 
 protocol Model: Identifiable {
-    var id: UUID { get }
+    var id: String { get }
 }
 
 protocol ViewModel: Identifiable {
-    var id: UUID { get }
+    var id: String { get }
 }
 
 protocol HasName {

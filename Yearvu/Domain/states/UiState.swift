@@ -9,13 +9,9 @@
 import protocol ReSwift.StateType
 
 struct UiState: StateType {
-    
-    
     static var current: UiState {
         return yearvuStore.state.uiState
     }
 }
 
-extension UiState: Hashable {
-    
-}
+extension UiState: Hashable {}
